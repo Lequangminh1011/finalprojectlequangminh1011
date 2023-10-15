@@ -1,0 +1,19 @@
+#guidesector{
+    width: 100%;display: flex;flex-direction: column;background-color: black;text-align: center; border-top: 0.1px solid white;
+}
+#guidesector1{
+    width: 100%;display: flex;flex-direction: row;background-color: black;justify-content: space-around;
+}
+.guidesector2{
+    width: 30%;
+}
+
+.guidepart{
+    width: 100%;display: flex; flex-direction: column;
+}
+.guidepart1{
+    width: 100%;display: flex; flex-direction: column;text-align: center;color: white;margin-bottom: 3%;margin-top: 3%;
+}
+.learnmore{
+    color: white;font-size: 150%;border: 2px solid white; width: 10%;margin-left: 43%;margin-top: 3%;padding: 1%;border-radius: 5%;
+}

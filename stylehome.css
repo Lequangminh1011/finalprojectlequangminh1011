@@ -1,0 +1,351 @@
+body,html{
+    margin: 0px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    height: max-content;
+    background-color: #1a1a1a;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+
+.h2{
+   margin-left: 2%;
+   margin-right: 2%; margin-top: 3%;
+}
+.buttondownload{
+    background-color: orange;
+    
+    margin-right: 0%;
+    border: none;
+    width: 15%; margin: 1%;
+    
+}
+.buttondownload1{
+    margin-right: 0%; 
+}
+
+.container4{
+    
+    margin-left: 5%;
+}
+.fifanews{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: white;
+    font-weight:900;
+    
+
+}
+
+.fifanews1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: white;
+    
+
+}
+.a{
+    color: white;
+    text-decoration: none;
+}
+
+.container1{
+    overflow: hidden;
+    position: sticky;
+    
+}
+
+
+.container10{
+    
+    border-bottom: 4px solid orange;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #003366;
+
+    
+}
+.container101{
+    margin-top: 100px;
+    background-image: url("https://media.contentapi.ea.com/content/dam/ea/fifa-mobile/season-2022/common/2022-wc-homepage-refresh/fmobile-szn7-section-bg-uefa-xl.png.adapt.1456w.png");
+    display: flex;
+    flex-direction: row;
+    height: 320px;
+}
+.container102{
+    background-image: url("https://media.contentapi.ea.com/content/dam/ea/fifa-mobile/season-2022/common/2022-wc-homepage-refresh/fmobile-szn7-section-bg-icons-xl.png.adapt.1456w.png");
+    display: flex;
+    flex-direction: row;
+    height: 320px;
+}
+.container11{
+    background-color: #003366;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+.container12{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: 50%;
+}
+.container13{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    
+}
+.formregister{
+    height:max-content;
+}
+.footer{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.signin{
+    display: flex;flex-direction: row; justify-content: end;width: 100%; background-color: #1a1a1a;text-align: center; height: 10%;
+}
+.imgsignin{
+    height: 50px; background-color: black;
+}
+.signin-create{
+    display: none;flex-direction: column;background-color: 	#262626;width: 100%;height: 10%;
+}
+.buttonsignin-create{
+    border-radius: 4%; border: 1px solid black; background-color: black;color: white;font-size: 150%;margin-left: 97%;width: 2.5%;
+}
+#signinaccount{
+    display: flex;flex-direction: column; width: 100%;height: 10%;justify-content: center;
+}
+#signinimg{
+    border-radius: 3%; margin-left: 47%;margin-bottom: 1%;height: 6%;width: 6%;margin-top: 5%;
+}
+#signinimg1{
+    color: white;text-align: center;margin-bottom: 5%;
+}
+#createaccount{
+    display: flex;flex-direction: column;border-radius: 3%;width: 100%;height: 10%;justify-content: center;
+}
+#createaccountimg{
+    border-radius: 3%; margin-left: 47%;margin-bottom: 1%;height: 6%;width: 6%;margin-top: 5%;
+}
+#createaccountimg1{
+    color: white;text-align: center;margin-bottom: 5%;
+}
+.container1{
+    display: flex;flex-direction: row;width: 100%;background-color: black;width: 100%;
+}
+.fifalogo{
+    width: 15%;margin: 10px;
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: black;
+    font-size: 70%;
+    width: 70%;
+    
+}
+#appsdownload{
+    display: flex;flex-direction: column;justify-content: space-around;display: none;background-color:#1a1a1a;
+}
+#buttonxx{
+    display: flex;justify-content: end;color: white;background-color: black;margin-left: 96%;
+}
+#applebutton{
+    width: 20%;height: 20%; margin-left: 40%;margin-top: 5%;
+}#googlebutton{
+    width: 20%; height: 20%;margin-left: 40%;margin-top: 5%;margin-bottom: 5%;
+}
+.container3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url("https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-mobile/season-5/global_assets/fifa-mobile-hero-medium-keyart-season-5-7x2-xl.jpg.adapt.crop5x2.1455w.jpg");
+    height:max-content;
+    background-image: url('https://cdn.wallpapersafari.com/99/49/8f9PQs.jpg') ;background-size: 100%;
+    
+}
+.logo{
+    height: 30%;
+    width: 30%;
+    margin-top: 5%;
+}
+.trailerbutton{
+    background-color: #003366;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    margin-bottom: 4%;
+}
+.slides1{
+    background-image: url('https://focus.independent.ie/thumbor/VfynLPZoH2ET2F0ZZLDg7z5uzR8=/75x0:898x549/1280x853/prod-mh-ireland/08996f2a-398c-4547-a4b1-d674a0fc8847/69a880c3-3e54-40ba-98e4-b52164ca1470/08996f2a-398c-4547-a4b1-d674a0fc8847.jpg') ;background-size: 100%;
+}
+.slides2{
+    background-image: url('https://meups.com.br/wp-content/uploads/2021/06/FIFA-22-5-900x503.jpg') ;background-size: 100%;
+}
+.slides3{
+    background-image: url('https://cdn.nos.nl/image/2022/05/10/859662/2880x2160a.jpg') ;background-size: 100%;
+}
+.slides4{
+    background-image: url('https://images.hdqwalls.com/wallpapers/ronaldo-fifa-18-8k-a6.jpg') ;background-size: 100%;
+}
+.container5{
+    background-image: url('https://media.contentapi.ea.com/content/dam/ea/fifa-mobile/season-2023/common/fmobile-szn7-section-bg-download-xl.jpg.adapt.1456w.jpg');
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+}
+.h1available{
+    color: white;
+    font-size: 150%;
+    margin-left: 10%;
+    margin-top: 3%;
+    width: 25%;
+ }
+ .buttondownload2{
+    margin-left: 30%;
+    margin-top: 2%;
+    width: 30%; display: flex;flex-direction: row;margin-bottom: 1%;margin-top: 1%;
+}
+.imgapple{
+    margin: 3%; width: 50%;
+}
+.imggoogle{
+    width: 50%;margin: 3%;
+}
+.container6{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #003366;
+}
+.replay{
+    text-align: center;
+    color: white;
+    font-size: 200%;
+    margin-top: 50px;
+}
+.replaycontent{
+    text-align: center;
+    color: white;
+    font-size: 110%;
+}
+.container7{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-decoration: 4px solid orange;
+    border-bottom: 4px solid orange;
+
+}
+.container8{
+    display: flex;
+    flex-direction: row;
+    margin-top: 300px;
+}
+
+.container9{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+#inputage{
+    height: 50px; width: 70%; background-color: #003366;border-radius: 4px; margin-right: 40px;border: 3px solid white;margin-top: 3%;
+}
+#inputemail{
+    width: 97.8%; height: 50px; background-color: #003366;border-radius: 4px;border: 3px solid white;
+}
+#countries{
+    background-color: #003366; height: 58px; width: 49%; border-radius: 4px;border: 3px solid white; margin-top: 10%; color: grey;margin-top: 3%;
+}
+#form{
+    margin-left: 6%; margin-top: 80px;height: max-content;
+}
+#checkemail{
+    color: orange;text-decoration: none;
+}
+#buttonsignin12{
+    background-color: orange; border-radius: 4px; color: black ;border: orange; height: 50px; width: 200px;margin-top: 10%;margin-bottom: 70px; font-size: 100%;display: flex;flex-direction: column;justify-content: center;
+}
+.extrainformation{
+    display: flex;flex-direction: column;background-color: #1a1a1a;border-bottom: 0.5px solid white;
+}
+.extrainformation{
+    width: 100%; display: flex;flex-direction: row;
+}
+.extrainformation2{
+    text-decoration: none; font-size: 100%; color: grey;margin: 5%;
+}
+.extrainformation0{
+    color: white;text-decoration: none; margin-top: 30px;
+}
+.appsfollow{
+    margin-top: 30px;display: flex;flex-direction: row;margin-bottom: 10%;
+}
+#instagram{
+    height: 10%;width: 10%;margin-right: 10%;
+}
+#instagram1{
+    height: 12%;width: 12%;margin-right: 10%;display: none;
+}
+#twitter{
+    height: 10%;width: 10%;margin-right: 10%;
+}
+#twitter1{
+    height: 12%;width: 12%;margin-right: 10%;display: none;
+}
+#facebook{
+    height: 10%;width: 10%;margin-right: 10%;
+}
+#facebook1{
+    height: 12%;width: 12%;margin-right: 10%;display: none;
+}
+#youtube{
+    height: 10%;width: 10%;margin-right: 10%;
+}
+#youtube1{
+    height: 12%;width: 12%;margin-right: 10%;display: none;
+}
+.ea-ring{
+    height: 50px;margin-top: 20px;margin-left: 20%;
+}
+.footerinformation{
+    width: 100%; background-color: #1a1a1a;height: 70px;margin-top: 0px;
+}
+.footer1{
+    display: flex; flex-direction: column;margin-top: 40px; width: 60%;
+}
+.footer2{
+    display: flex;flex-direction: row; margin-bottom: 15px;
+}
+.footer3{
+    text-decoration: none; color: black; margin-right: 5%;
+}
+.lastimg{
+    border-radius: 10px;margin-top: 20px;width: 90%;
+}
+.footer4{
+    display: flex;flex-direction: row; margin-top: 30px;
+}
+.container5{
+    width: 100%;
+}
+.trailerbutton{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}

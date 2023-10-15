@@ -1,0 +1,37 @@
+.helpheader{
+    width: 100%;
+    text-align: center;
+    background-image: url('https://allimages.sgp1.digitaloceanspaces.com/tipeduvn/2022/08/Hinh-nen-powerpoint-mau-xanh-don-gian-dep-tuyet-voi.jpg');
+    height: 100%;
+}
+.help{
+    display: flex;flex-direction: column;width: 100%;
+}
+.helpcontent{
+    display: flex;flex-direction: column;width: 100%;background-color: white;
+}
+.title{
+    border: 0.05px solid grey;padding: 2% 5%; width: 30%;
+}
+.helpcontent11{
+    display: flex;flex-direction: row;justify-content: space-around;margin: 5% 10%;
+}
+.helpcontent4{
+    background-image: url('https://nhadepso.com/wp-content/uploads/2023/02/hinh-nen-mau-tim_2.jpg'); text-align: center;
+}
+.helpcontent2{
+    display: flex;flex-direction: row; width: 100%; background-color: white;justify-content: space-around;margin-bottom: 5%;
+}
+.helpcontent3{
+    display: flex;flex-direction: column; width: 30%;border: 0.1px solid grey;
+}
+.search{
+    margin-bottom: 7%;width: 100%;
+    height: 50px;
+}
+.thanhsearch{
+    width: 30%; height: 30px;
+}
+.headerhelp{
+    margin-left: 13%;margin-top: 5%;display: flex; flex-direction: row;
+}

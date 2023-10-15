@@ -1,0 +1,33 @@
+#signinsuccess12{
+    text-align: center;background-color: #003366;height: 40%;margin-bottom: 10%;margin-top: 10%;display: none;width: 100%;
+}
+#eventnew{
+    display: none;flex-direction: column;width: 100%; background-color: black;border-bottom: 3px solid orange; border-top: 0.1px solid white;
+}
+#newss{
+    display: flex;flex-direction: row;width: 100%; margin-top: 3%;
+}
+#fc1{
+    display: flex;flex-direction: column; background-color: #1a1a1a;margin: 3%;margin-top: 7%;height: 95%;width: 95%;
+}
+.time{
+    margin: 3%;color: white;
+}
+.newss1{
+    display: flex;flex-direction: row;width: 100%;margin-bottom: 7%;
+}
+#fc4{
+    display: flex;flex-direction: column;  background-color: #1a1a1a;margin: 3%;height: 95%;width: 95%;margin-top: 15%;
+}
+#fc5{
+    display: flex;flex-direction: column; background-color: #1a1a1a;margin: 3%;height: 95%;width: 95%;margin-top: 15%;
+}
+#fc6{
+    display: flex;flex-direction: column; background-color: #1a1a1a;margin: 3%;height: 95%;width: 95%;margin-top: 15%;
+}
+.newsevent{
+    width: 34%;
+}
+.eventheader{
+    width: 100%; display: flex; flex-direction: column;text-align: start; background-image: url('https://media.sportsry.com/wp-content/uploads/2023/06/02011701/Screenshot-2023-06-01-224645.png');background-size: 100% 150%;
+}

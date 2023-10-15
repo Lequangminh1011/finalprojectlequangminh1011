@@ -1,0 +1,44 @@
+#communitysector{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url("https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-mobile/season-5/global_assets/fifa-mobile-hero-medium-keyart-season-5-7x2-xl.jpg.adapt.crop5x2.1455w.jpg");
+    justify-content: space-around;
+    height: 100%;
+    
+}
+#communitysector1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    
+    margin-bottom: 5%;
+}
+.askquestion1{
+    display: flex; flex-direction: row; 
+}
+#communitysector2{
+    display: flex;flex-direction: row; justify-content: space-around; margin-top: 7%;margin-bottom: 2%;
+}
+.popularquestion{
+    display: flex;
+    flex-direction: column; border: 1px solid black;background-color: black;padding: 1%;width: 20%;
+}
+.viewmore{
+    color: orange;margin-top: 3%;font-size: 130%;margin-bottom: 1%;
+}
+#communitysector3{
+    width: 100%;
+    background-color: white;text-align: center; background-image: url('https://msmobile.com.vn/upload_images/images/hinh-nen-powerpoint-mau-xanh-duong-7.jpg'); background-size: 100%;
+}
+.mediaplatform{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.mediaplatform1{
+    height: 6%; width: 6%; margin: 1%; margin-top: 0%;
+}

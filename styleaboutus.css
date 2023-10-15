@@ -1,0 +1,55 @@
+.aboutus{
+    width: 100%; background-color: white;display: flex; flex-direction: column;display: none;
+}
+.aboutus1{
+    display: flex;flex-direction: row; width: 100%;
+}
+.aboutus2{
+    color: black; margin: 1%; text-decoration: none; margin-top: 2%; font-weight: 200; font-size: 100%;
+}
+.aboutus3{
+    width: 100%; display: flex; flex-direction: column; text-align: center; color: white;
+    background-image: url('https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/homepage/images/2021/05/experiences-homepage-3-up-1.jpg.adapt.crop16x9.652w.jpg');
+    background-size: 100% 200%;
+}
+.aboutus4{
+    background-image: url('https://thpttranhungdao.edu.vn/wp-content/uploads/2022/10/Hinh-nen-powerpoint-mau-xanh-don-gian-dep-tuyet-voi.jpg');
+    width: 100%; display: flex; flex-direction: column; 
+}
+.aboutus5{
+    display: flex; width: 100%; flex-direction: row; justify-content: space-around;
+}
+.aboutus6{
+    display: flex; flex-direction: column; width: 30%;text-decoration: none; color: black; font-size: 70%;background-color: white;margin-top: 5%;margin-bottom: 8%;
+}
+.products{
+    color: white;text-align: center;margin-top: 5%;font-size: 400%;
+}
+.aboutus7{
+    display: flex; flex-direction: row;width: 100%; justify-content: space-around;background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210807/pngtree-business-wallpaper-simple-gradient-dark-blue-light-blue-background-image_758112.jpg');
+    background-size: 100% 100%; font-size: 120%; border-top: 10px solid black;
+}
+.aboutus9{
+    font-weight: 900; border-bottom: 0.1px solid grey;font-size: 120%;
+}
+.aboutus8{
+    padding: 3%;background-color: white; 
+}
+.aboutus10{
+     border-bottom: 0.1px solid grey;font-size: 120%; font-weight: 100;
+}
+.aboutus102{
+    display: flex;flex-direction: row; width: 100%;background-color: white; display: none;
+}
+.aboutus11{
+    display: flex;flex-direction: column; width: 30%; padding: 1%;
+}
+.aboutus12{
+    width: 70%; background-color: #262626;height: 100%;
+}
+.eagames{
+    width: 100%;display: flex;flex-direction: column;background-color: white;margin-top: 5%;
+}
+.eagames{
+    width: 100%;display: flex;flex-direction: column;
+}

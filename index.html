@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAST TERM PROJECT_LE QUANG MINH</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylehome.css">
+    <link rel="stylesheet" href="stylenews-evnet.css">
+    <link rel="stylesheet" href="stylehelp.css">
+    <link rel="stylesheet" href="stylecommunity.css">
+    <link rel="stylesheet" href="styleguide.css">
+    <link rel="stylesheet" href="styleaboutus.css">
+    <!-- <script>src="https://www.w3schools.com/lib/w3.js"</script> -->
+    <script src = "https://www.w3schools.com/lib/w3.js"></script>
+</head>
+<body style="background-color: #003366;width: 100%;">
+
+     
+ <div id="dangnhap" style="display: flex;width: 100%;background-color: #00061a;text-align: center;flex-direction: column;display: none;">
+  
+  
+  <div id="dangnhap1" style="display: flex;flex-direction: column;width: 40%;text-align: center;margin-left: 33%;height: 100%;">
+      <div id="back12" style="text-align: start;">
+        <a  href="#" style="width: 13%; background-color: black; height: 30px;border: 2px solid white ;border-radius: 10px;display: flex;flex-direction: column;justify-content: center;text-align: start;text-decoration: none;color: white;margin-top: 20px;"> < Back</a>
+      </div>
+      <div style="text-align: center;">
+        <img  style="height: 80%;text-align: center;" src="./img/EA_Medallion_White_RGB.png" alt="">
+      </div>
+      <div>
+        <h1 id="signinEA12" style="color: white;">Sign in to your EA Account</h1>
+      </div>
+
+      <div style="text-align: center;">
+        <h1 style="color: white;display: none;text-align: center;margin-left: 8%;" id="createEA">Create your EA Account</h1>
+      </div>
+
+      <div style="display: flex;flex-direction: row;justify-content: space-around;height: 40%;">
+         <a id="googlesignin" href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?response_type=code&include_granted_scopes=true&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuser.birthday.read&client_id=362119112335-os5rn4jm29pjnmcd8oj4va28a30lokhm.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fsignin.ea.com%2Fp%2Fjuno%2FcallbackGoogle&state=eyJlIjoiZTE3ODY0ODU2MjdzMSIsImViIjpmYWxzZSwiZXAiOiJnb29nbGUiLCJpciI6Imh0dHBzJTNBJTJGJTJGYWNjb3VudHMuZWEuY29tJTNBNDQzJTJGY29ubmVjdCUyRmF1dGglM0Zpbml0cmVmX3JlcGxheSUzRGZhbHNlJTI2ZGlzcGxheSUzRGp1bm9XZWIlMjUyRmxvZ2luJTI2cmVzcG9uc2VfdHlwZSUzRGNvZGUlMjZyZWRpcmVjdF91cmklM0RodHRwcyUyNTNBJTI1MkYlMjUyRnd3dy5lYS5jb20lMjUyRmxvZ2luX2NoZWNrJTI2bG9jYWxlJTNEZW5fR0IlMjZjbGllbnRfaWQlM0RFQURPVENPTS1XRUItU0VSVkVSIiwidHMiOjE2OTUzNjUyODcxMDcsInJtIjpmYWxzZSwibGkiOmZhbHNlfQ.bl9YeXdFUmhYNUdKcmQ5UWpfV0QyOVBxS1BuZkVVTXlqSHRtVnRzVS1qUQ&service=lso&o2v=2&theme=glif&flowName=GeneralOAuthFlow" style="border: 0.1px solid white; background-color: white;border-radius: 20%;width: 60px;height: 60px;display: flex;flex-direction: column;justify-content: center;">
+          <img src="./img/google (1).svg" alt="">
+         </a>
+         <a id="facesignin" href="https://www.facebook.com/privacy/consent/gdp/?params%5Bapp_id%5D=447403318669358&params%5Bkid_directed_site%5D=false&params%5Blogger_id%5D=%228cee25a8-5805-49c7-ad4b-52b482541158%22&params%5Bnext%5D=%22read%22&params%5Bredirect_uri%5D=%22https%3A%5C%2F%5C%2Fsignin.ea.com%5C%2Fp%5C%2Fjuno%5C%2FcallbackFacebook%22&params%5Bresponse_type%5D=%22token%22&params%5Breturn_scopes%5D=false&params%5Bscope%5D=%5B%22email%22%5D&params%5Bstate%5D=%22eyJlIjoiZTE3ODY0ODU2MjdzMSIsImViIjpmYWxzZSwiZXAiOiJmYiIsImlyIjoiaHR0cHMlM0ElMkYlMkZhY2NvdW50cy5lYS5jb20lM0E0NDMlMkZjb25uZWN0JTJGYXV0aCUzRmluaXRyZWZfcmVwbGF5JTNEZmFsc2UlMjZkaXNwbGF5JTNEanVub1dlYiUyNTJGbG9naW4lMjZyZXNwb25zZV90eXBlJTNEY29kZSUyNnJlZGlyZWN0X3VyaSUzRGh0dHBzJTI1M0ElMjUyRiUyNTJGd3d3LmVhLmNvbSUyNTJGbG9naW5fY2hlY2slMjZsb2NhbGUlM0Rlbl9HQiUyNmNsaWVudF9pZCUzREVBRE9UQ09NLVdFQi1TRVJWRVIiLCJ0cyI6MTY5NTM2NTE0NTU5Nywicm0iOmZhbHNlLCJsaSI6ZmFsc2V9.Z2NxTzBaR1RlTk1YNDNnS1RBRDQ3SjU3dW9JVnJYY0NwWklyQ3I2Y2Y1dw%22&params%5Bsteps%5D=%7B%22read%22%3A%5B%22email%22%2C%22baseline%22%2C%22public_profile%22%5D%7D&params%5Btp%5D=%22unspecified%22&params%5Bcui_gk%5D=%22login_platformization_read%22&source=gdp_delegated" style="border: 0.1px solid #0033cc; background-color: #0033cc;border-radius: 20%;width: 60px;height: 60px;display: flex;flex-direction: column;justify-content: center;">
+          <img src="./img/facebook.svg" alt="">
+         </a>
+        <a id="applesignin" href="https://appleid.apple.com/auth/authorize?response_type=code+id_token&response_mode=form_post&scope=name+email&client_id=com.ea.eadp.identity.prod.appleSignIn&redirect_uri=https%3A%2F%2Fsignin.ea.com%2Fp%2Fjuno%2FcallbackApple&state=eyJlIjoiZTE3ODY0ODU2MjdzMSIsImViIjpmYWxzZSwiZXAiOiJhcHBsZSIsImlyIjoiaHR0cHMlM0ElMkYlMkZhY2NvdW50cy5lYS5jb20lM0E0NDMlMkZjb25uZWN0JTJGYXV0aCUzRmluaXRyZWZfcmVwbGF5JTNEZmFsc2UlMjZkaXNwbGF5JTNEanVub1dlYiUyNTJGbG9naW4lMjZyZXNwb25zZV90eXBlJTNEY29kZSUyNnJlZGlyZWN0X3VyaSUzRGh0dHBzJTI1M0ElMjUyRiUyNTJGd3d3LmVhLmNvbSUyNTJGbG9naW5fY2hlY2slMjZsb2NhbGUlM0Rlbl9HQiUyNmNsaWVudF9pZCUzREVBRE9UQ09NLVdFQi1TRVJWRVIiLCJ0cyI6MTY5NTM2NTE4NDIwMSwicm0iOmZhbHNlLCJsaSI6ZmFsc2V9.OHR5ZVN2ZG5DMUpMVHByaW1CSW9wUlJEVnpEMVlJeHB1MXZUVi1XVWhWWQ" style="border: 0.1px solid white; background-color: white;border-radius: 20%;width: 60px;height: 60px;display: flex;flex-direction: column;justify-content: center;">
+          <img src="./img/apple.svg" alt="">
+        </a>
+         <a id="steamsignin" href="https://steamcommunity.com/oauth/loginform/?goto=%2Foauth%2Flogin%3Fresponse_type%3Dtoken%26client_id%3DDD604350%26state%3DeyJlIjoiZTE3ODY0ODU2MjdzMSIsImViIjpmYWxzZSwiZXAiOiJzdGVhbSIsImlyIjoiaHR0cHMlM0ElMkYlMkZhY2NvdW50cy5lYS5jb20lM0E0NDMlMkZjb25uZWN0JTJGYXV0aCUzRmluaXRyZWZfcmVwbGF5JTNEZmFsc2UlMjZkaXNwbGF5JTNEanVub1dlYiUyNTJGbG9naW4lMjZyZXNwb25zZV90eXBlJTNEY29kZSUyNnJlZGlyZWN0X3VyaSUzRGh0dHBzJTI1M0ElMjUyRiUyNTJGd3d3LmVhLmNvbSUyNTJGbG9naW5fY2hlY2slMjZsb2NhbGUlM0Rlbl9HQiUyNmNsaWVudF9pZCUzREVBRE9UQ09NLVdFQi1TRVJWRVIiLCJ0cyI6MTY5NTM2NTIwMTQ0Miwicm0iOmZhbHNlLCJsaSI6ZmFsc2V9.RF9MaDl0ME45ZzZoc05pLUdkLW1OTFFOZWIyX1dSTnc1WVA1NHFaeTg4QQ" style="border: 0.1px solid black; background-color: black;border-radius: 20%;width: 60px;height: 60px;display: flex;flex-direction: column;justify-content: center;">
+          <img src="./img/steam.svg" alt="">
+         </a>
+         <a id="xboxsignin" href="https://login.live.com/oauth20_authorize.srf?display=page&response_type=code&client_id=0000000044188829&scope=Xboxlive.signin&redirect_uri=https%3A%2F%2Fsignin.ea.com%2Fp%2Fjuno%2FcallbackXbox&state=eyJlIjoiZTE3ODY0ODU2MjdzMSIsImViIjpmYWxzZSwiZXAiOiJ4Ym94IiwiaXIiOiJodHRwcyUzQSUyRiUyRmFjY291bnRzLmVhLmNvbSUzQTQ0MyUyRmNvbm5lY3QlMkZhdXRoJTNGaW5pdHJlZl9yZXBsYXklM0RmYWxzZSUyNmRpc3BsYXklM0RqdW5vV2ViJTI1MkZsb2dpbiUyNnJlc3BvbnNlX3R5cGUlM0Rjb2RlJTI2cmVkaXJlY3RfdXJpJTNEaHR0cHMlMjUzQSUyNTJGJTI1MkZ3d3cuZWEuY29tJTI1MkZsb2dpbl9jaGVjayUyNmxvY2FsZSUzRGVuX0dCJTI2Y2xpZW50X2lkJTNERUFET1RDT00tV0VCLVNFUlZFUiIsInRzIjoxNjk1MzY1MjE4MDIxLCJybSI6ZmFsc2UsImxpIjpmYWxzZX0.Zm9wdGdqNUp5S3dHNU54eGFYQ2N2R01BM1RxektYa2JTLVZpNEZ5d09OMA" style="border: 0.1px solid green; background-color: green;border-radius: 20%;width: 60px;height: 60px;display: flex;flex-direction: column;justify-content: center;">
+          <img src="./img/xbox.svg" alt="">
+         </a>
+        <a id="psnsignin" href="https://my.account.sony.com/central/signin/?response_type=code&scope=psn%3As2s&scope=psn%3As2s&client_id=33f3a6af-0a39-4c98-9870-bee66f2cbc57&redirect_uri=https%3A%2F%2Fsignin.ea.com%2Fp%2Fjuno%2FcallbackPsn&state=eyJlIjoiZTE3ODY0ODU2MjdzMSIsImViIjpmYWxzZSwiZXAiOiJwczMiLCJpciI6Imh0dHBzJTNBJTJGJTJGYWNjb3VudHMuZWEuY29tJTNBNDQzJTJGY29ubmVjdCUyRmF1dGglM0Zpbml0cmVmX3JlcGxheSUzRGZhbHNlJTI2ZGlzcGxheSUzRGp1bm9XZWIlMjUyRmxvZ2luJTI2cmVzcG9uc2VfdHlwZSUzRGNvZGUlMjZyZWRpcmVjdF91cmklM0RodHRwcyUyNTNBJTI1MkYlMjUyRnd3dy5lYS5jb20lMjUyRmxvZ2luX2NoZWNrJTI2bG9jYWxlJTNEZW5fR0IlMjZjbGllbnRfaWQlM0RFQURPVENPTS1XRUItU0VSVkVSIiwidHMiOjE2OTUzNjUyMzU5MzIsInJtIjpmYWxzZSwibGkiOmZhbHNlfQ.UVZSOUdpSUU2WllJTkNaQ2JVV0cyQlltMnJiZk9aYWZOdG44eE1zdkdacw&cid=371727be-c426-4910-a301-1de6b29dd98d&error=login_required&error_code=4165&no_captcha=false#/signin/ca?entry=ca" style="border: 0.1px solid #003366; background-color: #003366;border-radius: 20%;width: 60px;height: 60px;display: flex;flex-direction: column;justify-content: center;">
+          <img src="./img/psn.svg" alt="">
+        </a>
+      </div>
+      <div style="width: 100%;height: 0.2px; background-color: grey;margin-top: 10%;margin-bottom: 10%;">or</div>
+      
+
+      <form action="" >
+
+        <div id="region" style="display: none;flex-direction: column;">
+          <h2  style="color: white;text-align: start;">Country/Region</h2>
+          <select name="" id="countries" style="width: 100%;height: 45px;background-color: #1a1a1a; border: 1px solid grey;border-radius: 10px;color: white;">
+            <option value="">United States</option>
+            <option value="">Argentina</option>
+            <option value="">Australia</option>
+            <option value="">Austria</option>
+            <option value="">Belgium</option>
+            <option value="">Brazil</option>
+            <option value="">Canada</option>
+            <option value="">Chile</option>
+            <option value="">China</option>
+            <option value="">Colombia</option>
+            <option value="">Czech Republic</option>
+            <option value="">Denmark</option>
+            <option value="">Finland</option>
+            <option value="">France</option>
+            <option value="">Germany</option>
+            <option value="">Greece</option>
+            <option value="">Hong Kong</option>
+            <option value="">Hungary</option>
+            <option value="">India</option>
+            <option value="">Ireland</option>
+            <option value="">Israel</option>
+            <option value="">Italy</option>
+            <option value="">Japan</option>
+            <option value="">Korea</option>
+            <option value="">Mexico</option>
+            <option value="">Netherlands</option>
+            <option value="">Norway</option>
+            <option value="">Poland</option>
+            <option value="">Portugal</option>
+            <option value="">Romania</option>
+            <option value="">Russia</option>
+            <option value="">Saudi Arabia</option>
+            <option value="">Singapore</option>
+            <option value="">Slovakia</option>
+            <option value="">South Africa</option>
+            <option value="">Spain</option>
+            <option value="">Sweden</option>
+            <option value="">Switzerland</option>
+            <option value="">Taiwan</option>
+            <option value="">Thailand</option>
+            <option value="">Turkey</option>
+            <option value="">Ukraine</option>
+            <option value="">United Arab Emirates</option>
+            <option value="">United Kingdom</option>
+            <option value="">Vietnam</option>
+        </select>
+        </div>  
+
+        <div style="display: none;flex-direction: column;" id="eabirth">
+          <h2  style="color: white;text-align: start;">Date Of Birth</h2>
+          <div style="display: flex;flex-direction: row;justify-content: space-around;">
+              <select name="" id="Date" style="width: 25%;height: 45px;background-color: #1a1a1a; border: 1px solid grey;border-radius: 10px;color: white;">
+                 <option value="">Day</option>
+                 <option value="">1</option>
+                 <option value="">2</option>
+                 <option value="">3</option>
+                 <option value="">4</option>
+                 <option value="">5</option>
+                 <option value="">6</option>
+                 <option value="">7</option>
+                 <option value="">8</option>
+                 <option value="">9</option>
+                 <option value="">10</option>
+                 <option value="">11</option>
+                 <option value="">12</option>
+                 <option value="">13</option>
+                 <option value="">14</option>
+                 <option value="">15</option>
+                 <option value="">16</option>
+                 <option value="">17</option>
+                 <option value="">18</option>
+                 <option value="">19</option>
+                 <option value="">20</option>
+                 <option value="">21</option>
+                 <option value="">22</option>
+                 <option value="">23</option>
+                 <option value="">24</option>
+                 <option value="">25</option>
+                 <option value="">26</option>
+                 <option value="">27</option>
+                 <option value="">28</option>
+                 <option value="">29</option>
+                 <option value="">30</option>
+                 <option value="">31</option>
+
+              </select>
+
+              <select name="" id="" style="width: 30%;height: 45px;background-color: #1a1a1a; border: 1px solid grey;border-radius: 10px;color: white;">
+                 <option value="">Month</option>
+                 <option value="">January</option>
+                 <option value="">Febuary</option>
+                 <option value="">March</option>
+                 <option value="">April</option>
+                 <option value="">May</option>
+                 <option value="">June</option>
+                 <option value="">July</option>
+                 <option value="">August</option>
+                 <option value="">Septemper</option>
+                 <option value="">October</option>
+                 <option value="">November</option>
+                 <option value="">December</option>
+              </select>
+
+              <select name="" id="" style="width: 40%;height: 45px;background-color: #1a1a1a; border: 1px solid grey;border-radius: 10px;color: white;">
+                <option value="">Year</option>
+                <option value="">1990</option>
+                <option value="">1991</option>
+                <option value="">1992</option>
+                <option value="">1993</option>
+                <option value="">1994</option>
+                <option value="">1995</option>
+                <option value="">1996</option>
+                <option value="">1997</option>
+                <option value="">1998</option>
+                <option value="">1999</option>
+                <option value="">2001</option>
+                <option value="">2002</option>
+                <option value="">2003</option>
+                <option value="">2004</option>
+                <option value="">2005</option>
+                <option value="">2006</option>
+                <option value="">2007</option>
+                <option value="">2008</option>
+                <option value="">2009</option>
+                <option value="">2010</option>
+                <option value="">2011</option>
+                <option value="">2012</option>
+                <option value="">2013</option>
+                <option value="">2014</option>
+                <option value="">2015</option>
+                <option value="">2016</option>
+                <option value="">2017</option>
+                <option value="">2018</option>
+                <option value="">2019</option>
+                <option value="">2020</option>
+                <option value="">2021</option>
+                <option value="">2022</option>
+                <option value="">2023</option>
+                
+                
+             </select>
+          </div>
+        </div>
+
+        <div style="display: none;flex-direction: column;" id="eaid">
+            <h2  style="color: white;text-align: start;">Create Your Own EA ID (4-16 characters)</h2>
+            <input id="inputeaid11" type="text" placeholder="Enter Your EA ID" style="width: 100%;height: 45px;background-color: #1a1a1a; border: 1px solid grey;border-radius: 10px;color: white;">
+        </div>
+
+        
+
+
+           
+          <div>
+            <h2  style="color: white;text-align: start;">Email</h2>
+            <input id="inputemail111" type="email" placeholder="Enter Your Email" style="width: 100%;height: 45px;background-color: #1a1a1a; border: 1px solid grey;border-radius: 10px;color: white;">
+          </div>    
+          <div>
+            <h2  style="color: white;text-align: start;">Password</h2>
+            <input id="inputpassword111" type="password" placeholder="Enter Your Password" style="width: 100%;height: 45px;background-color: #1a1a1a; border: 1px solid grey;border-radius: 10px;color: white;">
+          </div>  
+          
+
+          <div id="inf1" style="display: none;" style="text-align: start;margin-top: 7%;display: flex;flex-direction: row;">
+            <input type="checkbox" style="background-color: blue; color: white;text-align: start;">
+            <h4 style="color: white;">Allow players to find me with my email</h4>
+          </div> 
+  
+          <div id="inf2" style="display: none;" style="text-align: start;margin-top: 2%;display: flex;flex-direction: row;">
+            <input type="checkbox" style="background-color: blue; color: white;text-align: start;">
+            <h4 style="color: white;">Email about EA products, news, events and <br>promotions</h4>
+          </div> 
+  
+          <div id="inf3" style="display: none;" style="text-align: start;margin-top: 2%;display: flex;flex-direction: row;">
+            <input type="checkbox" style="background-color: blue; color: white;text-align: start;">
+            <h4 style="color: white;">I have read and accept the <a href="https://tos.ea.com/legalapp/WEBTERMS/US/en/PC2/" style="color: #0036e6;">User Agreement</a> <br> and EA's <a  style="color: #0036e6;" href="https://tos.ea.com/legalapp/WEBPRIVACY/US/en/PC2/">Privacy and Cookie Policy</a>.</h4>
+          </div> 
+          
+          <div id="inf4" style="text-align: start;margin-top: 7%;display: flex;flex-direction: row;">
+            <input type="checkbox" style="background-color: blue; color: white;text-align: start;">
+            <h4 style="color: white;">Remember me</h4>
+          </div> 
+          
+          
+          <a onclick="signin112()" id="signin111" href="#" style="width: 100%; background-color: #0036e6; height: 50px;border: 1px solid #0036e6 ;border-radius: 10px;display: flex;flex-direction: column;justify-content: center;margin-bottom: 10%;text-align: center;text-decoration: none;">
+              <h1 style="color: white;text-align: center;text-decoration: #0036e6;">Sign in</h1>
+          </a>
+
+          <a id="inf5" href="#" style="color: #0033cc; text-align: center;">Forgot Your Password ?</a>
+
+          <a onclick="signin113()" id="createaccount1112" href="#"  style="width: 100%; background-color: #0036e6; height: 50px;border: 1px solid #0036e6 ;border-radius: 10px;display: flex;flex-direction: column;justify-content: center;margin-bottom: 10%;text-align: center;text-decoration: none;margin-top: 10%;display: none;">
+            <h1 style="color: white;text-align: center;text-decoration: #0036e6;">Create Account</h1>
+          </a>
+
+          <div id="alreadyhave" href="#"  style="color: white; text-align: center;text-decoration: none;display: none;margin-bottom: 10%;margin-left: 10%;">
+            <span>Already Have An Account ? </span>
+            <a id="signinlast" href="#" style="color: #0033cc;display: none;margin-bottom: 10%;">Sign in</a>
+          </div>
+
+          <a  id="createaccount22" href="#" style="width: 100%; background-color: black; height: 50px;border: 2px solid #0036e6 ;border-radius: 10px;display: flex;flex-direction: column;justify-content: center;margin-bottom: 10%;margin-top: 10%;text-align: center;text-decoration: none;">
+            <h1 style="color: white;text-align: center;text-decoration: black;">CREATE ACCOUNT</h1>
+          </a>
+
+          
+          
+      </form>
+    </div>
+
+    <div id="signinsuccess111" style="margin-bottom: 10%;margin-top: 10%;display: none;flex-direction: column;height: 100%;text-align: center;">
+      <div id="back13" style="text-align: start;">
+        <a  href="#" style="width: 4%; background-color: black; height: 30px;border: 2px solid white ;border-radius: 10px;display: flex;flex-direction: column;justify-content: center;text-align: start;text-decoration: none;color: white;margin-top: 5px;margin-left: 5px;"> < Back</a>
+      </div>
+      <div style="text-align: center;">
+         <img src="./img/image-18.png" alt="" style="height: 10%;width: 10%;">
+      </div>
+      <h1 style="color: white;">YOU'VE SUCCESSFULLY SIGNED UP.</h1>
+      <h3 style="color: white;">You've successfully signed up to receive emails about FIFA Mobile and other EA news, <br> products, events and promotions. Unsubscribe at any time by changing your
+      <a style="text-decoration: none;color: orange;" href="https://signin.ea.com/p/juno/login?execution=e58504157s1&initref=https%3A%2F%2Faccounts.ea.com%3A443%2Fconnect%2Fauth%3Finitref_replay%3Dfalse%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fmyaccount.ea.com%252Fcp-ui%252Faboutme%252Flogin%26locale%3Den_US%26client_id%3Dcustomer_portal">email preferences</a>.</h3>
+     </div>
+
+     <div id="createsuccess111" style="margin-bottom: 10%;margin-top: 10%;display: none;flex-direction: column;height: 100%;text-align: center;">
+      <div id="back14" style="text-align: start;">
+        <a  href="#" style="width: 5%; background-color: black; height: 30px;border: 2px solid white ;border-radius: 10px;display: flex;flex-direction: column;justify-content: center;text-align: start;text-decoration: none;color: white;margin-top: 5px;margin-left: 5px;"> < Back</a>
+      </div>
+      <div style="text-align: center;">
+         <img src="./img/image-18.png" alt="" style="height: 10%;width: 10%;">
+      </div>
+      <h1 style="color: white;">YOU'VE SUCCESSFULLY CREATE ACCOUNT.</h1>
+      <h3 style="color: white;">You've successfully create account to receive emails about FIFA Mobile and other EA news, <br> products, events and promotions. Unsubscribe at any time by changing your
+      <a style="text-decoration: none;color: orange;" href="https://signin.ea.com/p/juno/login?execution=e58504157s1&initref=https%3A%2F%2Faccounts.ea.com%3A443%2Fconnect%2Fauth%3Finitref_replay%3Dfalse%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fmyaccount.ea.com%252Fcp-ui%252Faboutme%252Flogin%26locale%3Den_US%26client_id%3Dcustomer_portal">email preferences</a>.</h3>
+     </div>
+
+
+
+     
+ </div>
+
+    <div id="web" class="container" >
+        <div class="signin" style="position: fixed;margin-top: 0px;">
+            <img id="signin" src="./img/login-w-icon.png" alt="" class="imgsignin">
+            <img src="./img/QiAyCMthRMrt3H9xZArHDD-1200-80.jpg.webp" alt="" height="50px">
+        </div>
+        <div id="signin1" class="signin-create">
+            <button class="buttonsignin-create" id="buttonx" style="margin-top: 4.9%;">x</button>
+            <div id="signinaccount">
+                <img id="signinimg" src="./img/png-transparent-computer-icons-login-person-user-pessoa-smiley-desktop-wallpaper-address-icon.png" alt="">
+                <h4 id="signinimg1">SIGN IN</h4>
+            </div>
+            <div id="createaccount" >
+                <img id="createaccountimg" src="./img/png-clipart-computer-icons-user-login-icon-design-media-area-user.png" alt="">
+                <h4 id="createaccountimg1">CREATE ACCOUNT</h4>
+            </div>
+        </div>
+
+       <div id="signin2" style="margin-top: 0px;">
+        <div class="container1" style="position: fixed;margin-top: 4%;">
+            <img class="fifalogo" src="./img/fmobile-szn6-logo-nav (1).svg" alt="" >
+            <div class="container2" style="margin-top: 1%;">
+                
+              <h2 class="h2" id="buttonhome" style="margin-left: 10%;"><a href="#" class="a">HOME</a></h2>
+              <h2 class="h2" id="buttonhome1" style="display: none;margin-left: 10%;"><a href="#" class="a"  style="color: orange;">HOME</a></h2>
+
+              <h2 id="about-us" class="h2"><a href="#" class="a">ABOUT US</a></h2>
+              <h2 id="about-us1" style="display: none;" class="h2"><a href="#" class="a" style="color: orange;">ABOUT US</a></h2>
+
+              <h2 id="news" class="h2"><a href="#" class="a">NEWS</a></h2>
+              <h2 id="news1" style="display: none;" class="h2" ><a href="#" class="a" style="color: orange;">NEWS</a></h2>
+
+              <h2 id="help" class="h2"><a href="#" class="a">HELP</a></h2>
+              <h2 id="help1" class="h2" style="display: none;"><a href="#" class="a" style="color: orange;">HELP</a></h2>
+
+              <h2 class="h2" id="com"><a href="#" class="a">COMMUNITY</a></h2>
+              <h2 class="h2" id="com1" style="display: none;"><a href="#" class="a" style= "color: orange;">COMMUNITY</a></h2>
+
+              <h2 class="h2" id="guide"><a href="#" class="a">GUIDE</a></h2>
+              <h2 class="h2" id="guide1" style="display: none;"><a href="#" class="a"  style=" color: orange;">GUIDE</a></h2>
+
+            </div>
+            <div id="downloadbutt"  class="buttondownload" style="width: 15%;">
+                <h3 class="buttondownload1">
+                    <a href="#" class="a" style="color: black;">
+                        <h6 style="margin-left: 18%;">DOWNLOAD NOW</h6>
+                    </a>
+                </h3>
+            </div>
+         </div>
+         <div id="appsdownload"  style="margin-top: 11.8%;background-color: #1a1a1a;">
+            <button style="margin-top: 10px;margin-left: 5px;" id="buttonxx">x</button>
+            <img src="./img/apple-badge-cta-en.png" alt="" id="applebutton">
+            <img src="./img/google-badge-cta-en.png" alt="" id="googlebutton">
+        </div>
+       <div id="homesector" style="background-color: #333333;">
+        <div id="footballplayer" style="margin-top: 10%;"  style="width: 100%;height: auto;border-top: 5px solid white;"> 
+          <div class="container3 slides">
+              <div class="container4" >
+                <img  src="./img/fmobile-szn6-logo-nav (1).svg" alt="" class="logo">
+                <h1  class="fifanews">PLAY THE UPDATED <br> '23 SEASON</h1>
+                <p class="fifanews1">The full roster has been refreshed to match <br>the new football season, with current kits, <br>players, and more.</p>
+                <button class="trailerbutton" style="margin-bottom: 4%;"><a href="https://www.youtube.com/watch?v=dPXBPLb7x_c&t=3s" id="trailerbutt" style="font-size: 180%;color: white;text-decoration: none;margin: 20px;margin-top: 20px;margin-bottom: 20px;">WATCH TRAILER</a></button>
+               
+              </div>
+           </div>
+          <div class="container3 slides" style="background-image: url('https://ftw.usatoday.com/wp-content/uploads/sites/90/2022/07/FIFA23_VINICIUSJR_HM_UCL-3.png');background-size: 100%;">
+              <div class="container4">
+                
+                <img src="./img/fmobile-szn6-logo-nav (1).svg" alt="" class="logo"  style="margin-top: 5%;">
+                <h1 class="fifanews">PLAY THE UPDATED <br>'23 SEASON</h1>
+                <p class="fifanews1">The full roster has been refreshed to match <br>the new football season, with current kits, <br>players, and more.</p>
+                <button class="trailerbutton"><a href="https://www.youtube.com/watch?v=dPXBPLb7x_c&t=3s" style="font-size: 180%;color: white;text-decoration: none;margin: 20px;margin-top: 20px;margin-bottom: 20px;" id="trailerbutt">WATCH TRAILER</a></button>
+               
+              </div>
+           </div>
+           <div class="container3 slides slides1">
+              <div class="container4">
+                
+                <img src="./img/fmobile-szn6-logo-nav (1).svg" alt="" class="logo">
+                <h1 class="fifanews">PLAY THE UPDATED <br>'23 SEASON</h1>
+                <p class="fifanews1">The full roster has been refreshed to match <br>the new football season, with current kits, <br>players, and more.</p>
+                <button class="trailerbutton"><a href="https://www.youtube.com/watch?v=dPXBPLb7x_c&t=3s" style="font-size: 180%;color: white;text-decoration: none;margin: 20px;margin-top: 20px;margin-bottom: 20px;" id="trailerbutt">WATCH TRAILER</a></button>
+               
+              </div>
+           </div>
+           <div class="container3 slides slides2">
+              <div class="container4">
+                
+                <img src="./img/fmobile-szn6-logo-nav (1).svg" alt="" class="logo">
+                <h1 class="fifanews">PLAY THE UPDATED <br>'23 SEASON</h1>
+                <p class="fifanews1">The full roster has been refreshed to match <br>the new football season, with current kits, <br>players, and more.</p>
+                <button class="trailerbutton"><a href="https://www.youtube.com/watch?v=dPXBPLb7x_c&t=3s" style="font-size: 180%;color: white;text-decoration: none;margin: 20px;margin-top: 20px;margin-bottom: 20px;" id="trailerbutt">WATCH TRAILER</a></button>
+               
+              </div>
+           </div>
+           <div class="container3 slides slides3" >
+              <div class="container4">
+                
+                <img src="./img/fmobile-szn6-logo-nav (1).svg" alt="" class="logo">
+                <h1 class="fifanews">PLAY THE UPDATED <br>'23 SEASON</h1>
+                <p class="fifanews1">The full roster has been refreshed to match <br>the new football season, with current kits, <br>players, and more.</p>
+                <button class="trailerbutton"><a style="font-size: 180%;color: white;text-decoration: none;margin: 20px;margin-top: 20px;margin-bottom: 20px;" id="trailerbutt" href="https://www.youtube.com/watch?v=dPXBPLb7x_c&t=3s" id="trailerbutt">WATCH TRAILER</a></button>
+               
+              </div>
+           </div>
+           <div class="container3 slides slides4">
+              <div class="container4">
+                
+                <img src="./img/fmobile-szn6-logo-nav (1).svg" alt="" class="logo">
+                <h1 class="fifanews">PLAY THE UPDATED <br>'23 SEASON</h1>
+                <p class="fifanews1">The full roster has been refreshed to match <br>the new football season, with current kits, <br>players, and more.</p>
+                <button class="trailerbutton"><a href="https://www.youtube.com/watch?v=dPXBPLb7x_c&t=3s" style="font-size: 180%;color: white;text-decoration: none;margin: 20px;margin-top: 20px;margin-bottom: 20px;" id="trailerbutt">WATCH TRAILER</a></button>
+               
+              </div>
+           </div>
+           
+           <script>
+              w3.slideshow(".slides", 2000)
+            </script>
+       </div>
+      </div>
+     
+     <div id="mainbody" style="width: 100%;">
+      <div id="news11">
+          <div class="container5"  >
+              <h1 class="h1available">AVAILABLE NOW ON</h1>
+              <div class="buttondownload2">
+                 <a  class="imgapple" href="https://apps.apple.com/app/fifa-soccer/id1094930513"><img id="imgapple1" style="width: 100%;" src="./img/apple-badge-cta-en.png" alt=""></a>
+                 <a  class="imggoogle" href="https://play.google.com/store/apps/details?id=com.ea.gp.fifamobile"><img id="imggoogle1" style="width: 105%;" src="./img/google-badge-cta-en.png" alt=""></a>
+             </div>
+            </div>
+
+
+            
+            <div class="container6">
+              <h1 class="replay">REPLAY THE FIFA WORLD CUP</h1>
+              <p class="replaycontent">Play through the entire Tournament with any of the 32 qualified National Teams, or rewrite history and take control of 15 non-qualified National Teams.</p>
+              <img style="margin: 1%;width: 98%;" src="./img/fmobile-worldcupbraketwithukwinning-16x9.jpg.adapt.1456w.jpg" alt="">
+              <div class="container7">
+                 <div class="container8">
+                     <div class="container81">
+                         <img style="width: 95%; height: 70%;" src="./img/fmobile-vandijktraining-16x9.jpg.adapt.crop16x9.652w.jpg" alt="">
+                         
+                         <h2 style="color: white; font-size: 150%;">TRAINING FOOTBALL HEROES</h2>
+                         <p style="color: white; font-size: 130%;">Take part in playable live events that correspond <br>with the real-world tournaments throughout the <br> football season to earn special UEFA Champions League, UEFA <br></p>
+                     </div>
+                     <div class="container82">
+                         <img style="width: 95%; height: 70%;" src="./img/fmobile-lusail-dusk-16x9.jpg.adapt.crop16x9.652w.jpg" alt="">
+                         <h2 style="color: white; font-size: 150%;">FAST GAME, EXCITING GOALS</h2>
+                         <p style="color: white; font-size: 130%;">Take part in playable live events that correspond <br>with the real-world tournaments throughout the <br> football season to earn special UEFA Champions League, UEFA <br></p>
+                     </div>
+                 </div>
+                 <div class="container9">
+                     <div class="container91">
+                         <img style="width: 95%; height: 70%;" src="./img/fmobile-gameplay-advancedpassing-16x9.jpg.adapt.crop16x9.652w.jpg" alt="">
+                         <h2 style="color: white; font-size: 150%;">BUILD MOMMENTUM WITH PRESISION PASSING</h2>
+                         <p style="color: white; font-size: 130%;margin-bottom: 100px;">Take part in playable live events that correspond <br>with the real-world tournaments throughout the <br> football season to earn special UEFA Champions League, UEFA <br></p>
+                     </div>
+                     <div class="container92" >
+                         <img style="width: 95%; height: 70%;" src="./img/fmobile-hypeworthyultimateteam-16x9.jpg.adapt.crop16x9.652w.jpg" alt="">
+                         <h2 style="color: white; font-size: 150%;">LEVEL UP YOUR ULTIMATE TEAM</h2>
+                         <p style="color: white; font-size: 130%;margin-bottom: 100px;">Take part in playable live events that correspond <br>with the real-world tournaments throughout the <br> football season to earn special UEFA Champions League, UEFA <br></p>
+                     </div>
+                 </div>
+              </div>
+            </div>
+
+
+        
+        
+
+         <div class="container11" id="signin123">
+             <div style="margin-left: 6%; margin-top: 80px;">
+                <h1 style="color: white;">SIGN UP FOR EA SPORTS FIFA NEWS</h1> 
+                <p style="color: white;">Already have an EA Account? <a id="checkemail" href="#">Check your Email Preferences here.</a></p>
+                <p style="color: white;">Sign up today to receive emails about the latest EA SPORTS FIFA news, <br>videos, offers, and more (as well as other EA news, products, events, and <br>promotions).</p>
+             </div>
+             
+             <form id="form" action="">
+                 <h2  style="color: orange;">Email</h2>
+                 <input id="inputemail" type="email" placeholder="your email address">
+                 <div style="display: flex;flex-direction: row;">
+                  <h2 style="margin-bottom: 2%;color: orange;">Age</h2>
+                  <h2 style="margin-bottom: 2%;color: orange;margin-left: 55%;">Country</h2>
+                 </div>
+                 <div class="container12" style="margin-top: 2%;">
+                     <input id="inputage" type="number" placeholder="your age">
+                     <select name="" id="countries">
+                         <option value="">United States</option>
+                         <option value="">Argentina</option>
+                         <option value="">Australia</option>
+                         <option value="">Austria</option>
+                         <option value="">Belgium</option>
+                         <option value="">Brazil</option>
+                         <option value="">Canada</option>
+                         <option value="">Chile</option>
+                         <option value="">China</option>
+                         <option value="">Colombia</option>
+                         <option value="">Czech Republic</option>
+                         <option value="">Denmark</option>
+                         <option value="">Finland</option>
+                         <option value="">France</option>
+                         <option value="">Germany</option>
+                         <option value="">Greece</option>
+                         <option value="">Hong Kong</option>
+                         <option value="">Hungary</option>
+                         <option value="">India</option>
+                         <option value="">Ireland</option>
+                         <option value="">Israel</option>
+                         <option value="">Italy</option>
+                         <option value="">Japan</option>
+                         <option value="">Korea</option>
+                         <option value="">Mexico</option>
+                         <option value="">Netherlands</option>
+                         <option value="">Norway</option>
+                         <option value="">Poland</option>
+                         <option value="">Portugal</option>
+                         <option value="">Romania</option>
+                         <option value="">Russia</option>
+                         <option value="">Saudi Arabia</option>
+                         <option value="">Singapore</option>
+                         <option value="">Slovakia</option>
+                         <option value="">South Africa</option>
+                         <option value="">Spain</option>
+                         <option value="">Sweden</option>
+                         <option value="">Switzerland</option>
+                         <option value="">Taiwan</option>
+                         <option value="">Thailand</option>
+                         <option value="">Turkey</option>
+                         <option value="">Ukraine</option>
+                         <option value="">United Arab Emirates</option>
+                         <option value="">United Kingdom</option>
+                         <option value="">Vietnam</option>
+                     </select>
+                     
+                 </div>
+                 <div class="container13" id="signinsuccess">
+                     <p style="color: white;margin-top: 13%;">I can unsubscribe at any time by changing my <a id="preferences" style="color: orange;" href="#">email preferences</a>, contacting <br><a id="privacy" style="color: orange;" href="#">privacyadmin.ea.com</a>, or writing to Electronic Arts Inc., ATTN: Email Opt-Out, <br>209 Redwood Shores Pkwy, Redwood City, CA, 94065, USA.</p>
+                 </div>
+                 <div onclick="signin12()" id="buttonsignin12">
+                 <h2 style="text-align: center;"><a href="#" style="text-decoration: none;color: black;font-size: 100%;">Sign in</a></h2></div>
+             </form>
+             
+             
+         </div>
+         <div  id="signinsuccess12">
+          <img src="./img/image-18.png" alt="" style="height: 10%;width: 10%;">
+          <h1 style="color: white;">YOU'VE SUCCESSFULLY SIGNED UP.</h1>
+          <h3 style="color: white;">You've successfully signed up to receive emails about FIFA Mobile and other EA news, <br> products, events and promotions. Unsubscribe at any time by changing your
+          <a style="text-decoration: none;color: orange;" href="https://signin.ea.com/p/juno/login?execution=e58504157s1&initref=https%3A%2F%2Faccounts.ea.com%3A443%2Fconnect%2Fauth%3Finitref_replay%3Dfalse%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fmyaccount.ea.com%252Fcp-ui%252Faboutme%252Flogin%26locale%3Den_US%26client_id%3Dcustomer_portal">email preferences</a>.</h3>
+         </div>
+         </div>
+     </div>
+       </div>
+
+
+
+
+
+       <div id="eventnew" style="display: none;" style="margin-top: 25%;">
+        <div class="eventheader" style="margin-top: 10%;">
+          <img style="height: 100px;margin-top: 5%;" src="./img/fmobile-szn6-logo-nav (1).svg" alt="">
+          <h1 class="fifanews" style="margin-left: 10%;">FIFA MOBILE NEWS</h1>
+          <p class="fifanews1" style="margin-left: 10%;">Stay on top of all the latest FIFA Mobile news and <br>updates, from live events to new feature updates, right <br>here.</p>
+        </div>
+        <div id="newss">
+          <div id="fc11" class="newsevent">
+              <div  id="fc1" >
+                  <img style="width: 100%;" src="./img/image001-2-1024x576-16917647737351073773723.jpg" alt="">
+                  <h3 class="time"><span style="color: orange;margin-right: 5%;">FIFA</span>AUG 18 2023</h3>
+                  <h1 style="color: white;margin: 3%;">EA SPORTS FC MOBILE- <br>PREPARING FOR EA SPORTS FC MOBILE</h1>
+                  <p style="color: white;margin: 3%;">TestFlight is a platform developed by Apple that allows users to test beta versions of apps before they are officially released on the App Store. If you’ve received an invitation link to test an EA SPORTS FC™ MOBILE BETA, congratulations!</p>
+                </div>
+          </div>
+          <div id="fc12" class="newsevent">
+              <div id="fc2" style="display: flex;flex-direction: column;  background-color: #1a1a1a; margin: 3%;margin-top: 7%;height: 95%;width: 95%;">
+                  <img style="width: 100%;" src="./img/image001-2-1024x576-16917647737351073773723.jpg" alt="">
+                  <h3 class="time"><span style="color: orange;margin-right: 5%;">FIFA</span>AUG 18 2023</h3>
+
+                  <h1 style="color: white;margin: 3%;">EA SPORTS FC MOBILE- <br>REVEAL</h1>
+                  <p style="color: white;margin: 3%;">TestFlight is a platform developed by Apple that allows users to test beta versions of apps before they are officially released on the App Store. If you’ve received an invitation link to test an EA SPORTS FC™ MOBILE BETA, congratulations!</p>
+              </div>
+          </div>
+          <div id="fc13" class="newsevent">
+              <div id="fc3" style="display: flex;flex-direction: column;  background-color: #1a1a1a; margin: 3%;margin-top: 7%;height: 95%;width: 95%;">
+                  <img style="width: 100%;" src="./img/image001-2-1024x576-16917647737351073773723.jpg" alt="">
+                  <h3 class="time"><span style="color: orange;margin-right: 5%;">FIFA</span>AUG 18 2023</h3>
+                  <h1 style="color: white;margin: 3%;">EA SPORTS FC MOBILE- <br>LIMITED META TESTFLIGHT GUIDE</h1>
+
+                  <p style="color: white;margin: 3%;">TestFlight is a platform developed by Apple that allows users to test beta versions of apps before they are officially released on the App Store. If you’ve received an invitation link to test an EA SPORTS FC™ MOBILE BETA, congratulations!</p>
+                </div>
+          </div>
+        </div>
+        
+        <div class="newss1">
+          <div id="fc14" class="newsevent">
+              <div id="fc4">
+                  <img style="width: 100%;" src="./img/image001-2-1024x576-16917647737351073773723.jpg" alt="">
+                  <h3 class="time"><span style="color: orange;margin-right: 5%;">FIFA</span>AUG 18 2023</h3>
+
+                  <h1 style="color: white;margin: 3%;">EA SPORTS FC MOBILE- <br>LIMITED BETA</h1>
+                  <p style="color: white;margin: 3%;">TestFlight is a platform developed by Apple that allows users to test beta versions of apps before they are officially released on the App Store. If you’ve received an invitation link to test an EA SPORTS FC™ MOBILE BETA, congratulations!</p>
+                </div>
+          </div>
+          <div id="fc15" class="newsevent">
+              <div id="fc5">
+                  <img style="width: 100%;" src="./img/image001-2-1024x576-16917647737351073773723.jpg" alt="">
+                  <h3 class="time"><span style="color: orange;margin-right: 5%;">FIFA</span>AUG 18 2023</h3>
+
+                  <h1 style="color: white;margin: 3%;">EA SPORTS FC MOBILE- <br>COMMUNITY ROADMAP</h1>
+                  <p style="color: white;margin: 3%;">TestFlight is a platform developed by Apple that allows users to test beta versions of apps before they are officially released on the App Store. If you’ve received an invitation link to test an EA SPORTS FC™ MOBILE BETA, congratulations!</p>
+                </div>
+          </div>
+          <div id="fc16" class="newsevent">
+              <div id="fc6">
+                  <img style="width: 100%;" src="./img/image001-2-1024x576-16917647737351073773723.jpg" alt="">
+                  <h3 class="time"><span style="color: orange;margin-right: 5%;">FIFA</span>AUG 18 2023</h3>
+
+                  <h1 style="color: white;margin: 3%;">EA SPORTS FC MOBILE- <br>ANNOUNCEMENT ARTICLE</h1>
+                  <p style="color: white;margin: 3%;">TestFlight is a platform developed by Apple that allows users to test beta versions of apps before they are officially released on the App Store. If you’ve received an invitation link to test an EA SPORTS FC™ MOBILE BETA, congratulations!</p>
+                </div>
+          </div>
+        </div>
+        
+     </div>
+
+
+     <div class="help" id="helpplayer" style="display: none; " style="margin-top: 25%;">
+       <div style="margin-top: 10%;" class="helpheader">
+         <img style="height: 100px;margin: 5%;" src="./img/fmobile-szn6-logo-nav (1).svg" alt="">
+         <div class="search">
+            <input class="thanhsearch" type="text" placeholder="search for help...">
+            
+         </div>
+       </div>
+       <div class="helpcontent" >
+         <div class="headerhelp">
+           <h2 style="margin-right: 5%;border-bottom: 5px solid red;">FIFA Mobile support</h2>
+           <h2 style="border-bottom: 5px solid red;">Account support</h2>
+         </div>
+         <div style="margin-left: 13%;margin-top: 1%;">
+            <h1>TOP TOPICS IN FIFA MOBILE</h1>
+            <p>Get help for the top issues FIFA Mobile players are currently running into.</p>
+         </div>
+         <div class="helpcontent1">
+            <div class="helpcontent11">
+                <div class="title">I want to recover my deleted account <a href="https://help.ea.com/en/help-contact-us/?product=fifa-mobile&platform=&topic=restore-account&category=manage-my-account&subcategory=restore-account" style="color: orange;margin-left: 8%;font-size: 150%;text-decoration: none;">➡</a> </div>
+                <div class="title">I want to dispute a ban or suspension <a href="https://help.ea.com/en/help-contact-us/?product=fifa-mobile&platform=&topic=dispute-ban-suspension&category=manage-my-account&subcategory=banned-or-suspended-account" style="color: orange;margin-left: 6%;font-size: 150%;text-decoration: none;">➡</a> </div>
+                
+            </div>
+            <div class="helpcontent11">
+                <div class="title">I need help recovering my mobile game <a href="https://help.ea.com/en/help-contact-us/?product=fifa-mobile&platform=&topic=recover-mobile-game&category=manage-my-account&subcategory=restore-account" style="color: orange;margin-left: 3%;font-size: 150%;text-decoration: none;">➡</a></div>
+                <div class="title">I'm looking for something I earned <a href="https://help.ea.com/en/help-contact-us/?product=fifa-mobile&platform=&topic=missing-reward&category=missing-content&subcategory=had-content-and-lost-it" style="color: orange;margin-left: 9%;font-size: 150%;text-decoration: none;">➡</a></div>
+                
+            </div>
+         </div>
+         <div class="helpcontent2">
+           <div class="helpcontent3">
+              <div class="helpcontent4">
+                <img src="./img/EA_Medallion_White_RGB.png" alt="">
+              </div>
+              <h1 style="margin: 5%;">How to play by the rules in FIFA Mobile</h1>
+              <p style="color: grey;margin: 5%;">Keep your account safe and play by the rules in FIFA Mobile.</p>
+              <a style="text-decoration: none;" href="https://help.ea.com/en/help/fifa/fifa-mobile/fifa-mobile-know-the-rules/">
+                <h2 style="color: orange;margin: 5%;">Read More</h2>
+              </a>
+           </div>
+           <div class="helpcontent3">
+              <div class="helpcontent4">
+                <img src="./img/EA_Medallion_White_RGB.png" alt="">
+              </div>
+              <h1 style="margin: 5%;">How to improve your Players in FIFA Mobile</h1>
+              <p style="color: grey;margin: 5%;">See how to improve your Players and team in FIFA Mobile using Skill Boosts, Player leveling, Chemistry, and training materials.</p>
+              <a  style="text-decoration: none;" href="https://help.ea.com/en/help/fifa/fifa-mobile/how-to-improve-your-players-and-team-in-fifa-mobile/">
+                <h2 style="color: orange;margin: 5%;">Read More</h2>
+              </a>
+
+           </div>
+           <div class="helpcontent3">
+              <div class="helpcontent4">
+                <img src="./img/EA_Medallion_White_RGB.png" alt="">
+              </div>
+              <h1 style="margin: 5%;">What's new in FIFA Mobile</h1>
+              <p style="color: grey;margin: 5%;">The new season of FIFA Mobile is here. Find out what items carry over, what items reset, and the new features we’ve designed to improve your gameplay experience.</p>
+              <a style="text-decoration: none;" href="https://help.ea.com/en/help/fifa/fifa-mobile/fifa-mobile-new-season-reset/">
+                <h2 style="color: orange;margin: 5%;">Read More</h2>
+              </a>              
+
+           </div>
+         </div>
+         <div class="helpcontent2">
+           <div class="helpcontent3">
+              <div class="helpcontent4">
+                <img src="./img/EA_Medallion_White_RGB.png" alt="">
+              </div>
+              <h1 style="margin: 5%;">FIFA Mobile system requirements</h1>
+              <p style="color: grey;margin: 5%;">Find out the specs you need to download FIFA Mobile on iOS and Android, to play Head to Head, and to have 60 FPS in the upcoming season.</p>
+              <a style="text-decoration: none;" href="https://help.ea.com/en/help/fifa/fifa-mobile/device-coverage-for-fifa-mobile/">
+                <h2 style="color: orange;margin: 5%;">Read More</h2>
+              </a>              
+
+           </div>
+           <div class="helpcontent3">
+              <div class="helpcontent4">
+                <img src="./img/EA_Medallion_White_RGB.png" alt="">
+              </div>
+              <h1 style="margin: 5%;">How to get help and find your User ID in FIFA Mobile</h1>
+              <p style="color: grey;margin: 5%;">Need help in FIFA Mobile? Follow these steps to get help in-game or find your User ID in case you can’t access the game.</p>
+              <a style="text-decoration: none;" href="https://help.ea.com/en/help/fifa/fifa-mobile/find-your-fifa-mobile-user-id/">
+                <h2 style="color: orange;margin: 5%;">Read More</h2>
+              </a>              
+
+           </div>
+           <div class="helpcontent3">
+              <div class="helpcontent4">
+                <img src="./img/EA_Medallion_White_RGB.png" alt="">
+              </div>
+              <h1 style="margin: 5%;">Link your accounts to save game progress in FIFA Mobile</h1>
+              <p style="color: grey;margin: 5%;">Save your game to stay on the pitch. Linking FIFA Mobile to Google Play (Android), Game Center (iOS), or Facebook is a guaranteed way to save your progress.</p>
+              <a style="text-decoration: none;" href="https://help.ea.com/en/help/fifa/fifa-mobile/save-your-game-progress-in-fifa-mobile/">
+                <h2 style="color: orange;margin: 5%;">Read More</h2>
+              </a>              
+
+           </div>
+         </div>
+       </div>
+     </div>
+
+
+
+     <div id="communitysector" style="display: none;" style="margin-top: 25%;">
+        <div style="margin-top: 20%;" id="communitysector1">
+           <div class="askquestion">
+             <div class="askquestion1">
+              <img style="height: 60px;width: 60px;margin-top: 2%;" src="./img/ealogo_blackwhite.png" alt="">
+              <h1 style="color: white;font-size: 200%;">ANSWERS HQ</h1>
+             </div>
+             <input style="width: 150%;height: 30%;" type="text" placeholder="Search or ask a question...">
+           </div>
+           <div style="margin-left: 0px;">
+            <img style="height: 80%;width: 200%;" src="./img/fmobile-szn6-logo-nav (1).svg" alt="">
+           </div>
+        </div>
+        <div style="background-color: white;height: 0.1px;width: 90%;margin-left: 5%;"></div>
+        <div id="communitysector2">
+          <div class="popularquestion">
+             <h1 style="color: white;"> FIFA Mobile Guides</h1>
+             <p style="color: white;">Get in-depth guides about Gameplay,<br> Events, Market, H2H and VS Attack <br> to elevate your FIFA Mobile <br> experience!</p>
+             <a href="https://www.ea.com/games/fifa/fifa-mobile/guide" class="viewmore">View more</a>
+          </div>
+          <div class="popularquestion">
+            <h1 style="color: white;">Top Answers</h1>
+             <p style="color: white;">Browse the most popular answers <br>provided by the community and EA <br>for solutions to common issues. </p>
+             <a href="https://answers.ea.com/t5/forums/searchpage/tab/message?filter=acceptedSolutions%2CsolvedThreads%2Clocation&solution=true&advanced=true&solved=true&location=category%3Afifa-mobile-19-en&&sort_by=-topicPostDate&collapse_discussion=true&search_type=thread" class="viewmore">View answers</a>
+          </div>
+          <div class="popularquestion">
+            <h1 style="color: white;">Unanswered Questions</h1>
+             <p style="color: white;">Share your knowledge and help out <br>your fellow players by answering one <br>of these open questions.</p>
+             <a href="https://answers.ea.com/t5/forums/searchpage/tab/message?filter=labels%2Clocation%2CdateRangeType%2CopenResponse&advanced=true&openresponse=true&rangeTime=1M&location=board%3Afifa-mobile-19-general-discussion-en&sort_by=-topicPostDate&collapse_discussion=true&search_type=thread" class="viewmore">View questions</a>
+          </div>
+          <div class="popularquestion">
+            <h1 style="color: white;">Need help in FIFA Mobile?</h1>
+             <p style="color: white;">If you’re playing FIFA Mobile and need <br>help, the fastest way to get it is by <br>contacting us in-game.</p>
+             <a href="https://help.ea.com/en/help/fifa/fifa-mobile/find-your-fifa-mobile-user-id/" class="viewmore">View more</a>
+          </div>
+        </div>
+        <div style="width: 100%;height: 10px;background-color: black;"></div>
+        <div id="communitysector3">
+          <div style="display: flex;flex-direction: row;margin-top: 5%;">
+            <img style="height: 20%;width: 20%;margin: 2%;margin-left: 13%;margin-right: 3%;" src="./img/ea-sports-fifa-logo-C2FF7F9D86-seeklogo.com.png" alt="">
+            <h1 style="margin-top: 5%;">CONTACT WITH FIFA COMMUNITY</h1>
+          </div>
+          <div style="background-color: black;height: 0.1px;width: 90%;margin-left: 5%;"></div>
+          <div class="mediaplatform">
+            <img id="facebookmedia" class="mediaplatform1" src="./img/tải xuống (1).png" alt="">
+            <img id="instagrammedia" class="mediaplatform1" src="./img/tải xuống (3).png" alt="">
+            <img id="youtubemedia" class="mediaplatform1" src="./img/tải xuống (4).png" alt="">
+            <img id="twittermedia" class="mediaplatform1" src="./img/tải xuống.png" alt="">
+
+          </div>
+        </div>
+     </div>
+
+
+
+    <div id="guidesector" style="display: none;" style="margin-top: 25%;">
+       <img style="margin: 5%; margin-top: 20%;" src="./img/fmobile-s7-guide-banner-16x9-1.jpg.adapt.1456w.jpg" alt="">
+       <div id="guidesector1">
+         <div class="guidesector2">
+           <a style="text-decoration: none;" href="https://www.ea.com/games/fifa/fifa-mobile/news/founders-guide">
+            <img style="width: 100%;" src="./img/fc-mobile-founders-thumbnail.png.adapt.crop16x9.431p.png" alt="">
+            <div style="text-align: left;">
+              <p style="color: orange;">AUG 24, 2023</p>
+              <h1 style="color: white;">EA SPORTS FC™ <br> MOBILE FOUNDERS <br> GUIDE</h1>
+              <p style="color: white;">Before you get started on your Founders <br>journey, here are some important FAQs <br>to help you navigate this exciting time!</p>
+            </div>
+           </a>
+         </div>
+         <div class="guidesector2">
+          <a style="text-decoration: none;" href="https://www.ea.com/games/fifa/fifa-mobile/news/tots-tutorial">
+           <img style="width: 100%;" src="./img/tots-tutorial-thumbnail.png.adapt.crop16x9.431p.png" alt="">
+           <div style="text-align: left;">
+             <p style="color: orange;">AUG 24, 2023</p>
+             <h1 style="color: white;">TEAM OF THE <br> SEASON</h1>
+             <p style="color: white;">Team of the Season is here! Powered by <br> your vote, #TOTS features some of the <br>top performers from the Premier <br> League, Bundesliga, LaLiga Santander,<br> Serie A TIM, and Ligue 1 Uber Eats.</p>
+           </div>
+          </a>
+        </div>
+        <div class="guidesector2">
+          <a style="text-decoration: none;" href="https://www.ea.com/games/fifa/fifa-mobile/news/toty-tutorial">
+           <img style="width: 100%;" src="./img/toty-tutorial.png.adapt.crop16x9.431p.png" alt="">
+           <div style="text-align: left;">
+             <p style="color: orange;">AUG 24, 2023</p>
+             <h1 style="color: white;">TEAM OF THE <br> YEAR</h1>
+             <p style="color: white;">Ultimate Team of the Year has arrived in <br> #FIFAMobile! Join Stopde as he walks <br>you through the highly anticipated <br>#UTOTY update.</p>
+           </div>
+          </a>
+        </div>
+       </div>
+       <div id="guidesector1">
+        <div class="guidesector2">
+          <a style="text-decoration: none;" href="https://www.ea.com/games/fifa/fifa-mobile/news/fifa-mobile-fifa-world-cup-mode-guide">
+           <img style="width: 100%;" src="./img/wc22-tutorial-thumbnail.jpg.adapt.crop16x9.431p.jpg" alt="">
+           <div style="text-align: left;">
+             <p style="color: orange;">AUG 24, 2023</p>
+             <h1 style="color: white;">FIFA WORLD <br>CUP™ MODE <br>GUIDE</h1>
+             <p style="color: white;">Explore all features of the FIFA World <br>Cup™ Tournament to guide your nation <br>to glory! We will tell you all about the <br>available National Teams, Difficulty <br>Levels, Rewards, and Live OVR!</p>
+           </div>
+          </a>
+        </div>
+        <div class="guidesector2">
+         <a style="text-decoration: none;" href="https://www.ea.com/games/fifa/fifa-mobile/news/gameplay-controls-guide-gesture-controls">
+          <img style="width: 100%;" src="./img/fifa-mobile-wc-keyart-c.jpg.adapt.crop16x9.431p (1).jpg" alt="">
+          <div style="text-align: left;">
+            <p style="color: orange;">AUG 24, 2023</p>
+            <h1 style="color: white;">FIFA MOBILE <br>- GAMEPLAY <br> CONTROLS GUIDE <br>- GESTURE <br>CONTROLS</h1>
+            <p style="color: white;">Everything you should know to have <br>complete control of your team on the field.</p>
+          </div>
+         </a>
+       </div>
+       <div class="guidesector2">
+         <a style="text-decoration: none;" href="https://www.ea.com/games/fifa/fifa-mobile/news/gameplay-controls-guide-set-pieces">
+          <img style="width: 100%;" src="./img/fifa-mobile-wc-keyart-c.jpg.adapt.crop16x9.431p (1).jpg" alt="">
+          <div style="text-align: left;">
+            <p style="color: orange;">AUG 24, 2023</p>
+            <h1 style="color: white;">FIFA MOBILE - GAMEPLAY <br> CONTROLS GUIDE <br>- SET PIECES</h1>
+            <p style="color: white;">Set Piece refers to when the ball <br> is returned to open play after a stoppage/foul. <br> Examples of Set Pieces include, Free <br> Kicks, Corners, Penalty Kicks, <br> etc.</p>
+          </div>
+         </a>
+       </div>
+      </div>
+      <div id="guidesector1">
+        <div class="guidesector2">
+          <a style="text-decoration: none;" href="https://www.ea.com/games/fifa/fifa-mobile/news/gameplay-guide">
+           <img style="width: 100%;" src="./img/fifa-mobile-wc-keyart-c.jpg.adapt.crop16x9.431p (1).jpg" alt="">
+           <div style="text-align: left;">
+             <p style="color: orange;">AUG 24, 2023</p>
+             <h1 style="color: white;">FIFA MOBILE <br> - GAMEPLAY <br>CONTROLS GUIDE</h1>
+             <p style="color: white;">Before you get started on your Founders <br>journey, here are some important FAQs <br>to help you navigate this exciting time!</p>
+           </div>
+          </a>
+        </div>
+        <div class="guidesector2">
+         <a style="text-decoration: none;" href="https://www.ea.com/games/fifa/fifa-mobile/news/fifa-mobile-team-basics">
+          <img style="width: 100%;" src="./img/poster.jpg.adapt.crop16x9.431p.jpg" alt="">
+          <div style="text-align: left;">
+            <p style="color: orange;">AUG 24, 2023</p>
+            <h1 style="color: white;">TEAM BASICS</h1>
+            <p style="color: white;">Team of the Season is here! Powered by <br> your vote, #TOTS features some of the <br>top performers from the Premier <br> League, Bundesliga, LaLiga Santander,<br> Serie A TIM, and Ligue 1 Uber Eats.</p>
+          </div>
+         </a>
+       </div>
+       <div class="guidesector2">
+         <a style="text-decoration: none;" href="https://www.ea.com/games/fifa/fifa-mobile/news/fifa-mobile-head-to-head">
+          <img style="width: 100%;" src="./img/poster.jpg.adapt.crop16x9.431p (1).jpg" alt="">
+          <div style="text-align: left;">
+            <p style="color: orange;">AUG 24, 2023</p>
+            <h1 style="color: white;">HEAD TO <br>HEAD</h1>
+            <p style="color: white;">Ultimate Team of the Year has arrived in <br> #FIFAMobile! Join Stopde as he walks <br>you through the highly anticipated <br>#UTOTY update.</p>
+          </div>
+         </a>
+       </div>
+      </div>
+      <div id="guidesector1">
+        <div class="guidesector2">
+          <a style="text-decoration: none;" href="https://www.ea.com/games/fifa/fifa-mobile/news/fifa-mobile-vs-attack">
+           <img style="width: 100%;" src="./img/poster.jpg.adapt.crop16x9.431p (5).jpg" alt="">
+           <div style="text-align: left;">
+             <p style="color: orange;">AUG 24, 2023</p>
+             <h1 style="color: white;">VS ATTACK</h1>
+             <p style="color: white;">Before you get started on your Founders <br>journey, here are some important FAQs <br>to help you navigate this exciting time!</p>
+           </div>
+          </a>
+        </div>
+        <div class="guidesector2">
+         <a style="text-decoration: none;" href="https://www.ea.com/games/fifa/fifa-mobile/news/fifa-mobile-market">
+          <img style="width: 100%;" src="./img/poster.jpg.adapt.crop16x9.431p (3).jpg" alt="">
+          <div style="text-align: left;">
+            <p style="color: orange;">AUG 24, 2023</p>
+            <h1 style="color: white;">FIFA Mobile <br>MARKET</h1>
+            <p style="color: white;">Team of the Season is here! Powered by <br> your vote, #TOTS features some of the <br>top performers from the Premier <br> League, Bundesliga, LaLiga Santander,<br> Serie A TIM, and Ligue 1 Uber Eats.</p>
+          </div>
+         </a>
+       </div>
+       <div class="guidesector2">
+         <a style="text-decoration: none;" href="https://www.ea.com/games/fifa/fifa-mobile/news/fifa-mobile-live-events">
+          <img style="width: 100%;" src="./img/poster.jpg.adapt.crop16x9.431p (6).jpg" alt="">
+          <div style="text-align: left;">
+            <p style="color: orange;">AUG 24, 2023</p>
+            <h1 style="color: white;">FIFA Mobile <br>LIVE EVENTS</h1>
+            <p style="color: white;">Ultimate Team of the Year has arrived in <br> #FIFAMobile! Join Stopde as he walks <br>you through the highly anticipated <br>#UTOTY update.</p>
+          </div>
+         </a>
+       </div>
+      </div>
+
+      <div style="width: 90%;background-color: white;margin-left: 5%;height: 0.1px;margin-top: 5%;"></div>
+
+      <div class="guidepart" style="margin-top: 17%;">
+        <div class="guidepart1">
+          <h1>ROAD TO THE FINAL</h1>
+          <p>Welcome the UEFA Champions League back to FIFA Mobile with new dynamic Player Items that champion the clubs still <br>vying for European glory.</p>
+          <a style="text-decoration: none;" href="https://www.ea.com/games/fifa/fifa-mobile/road-to-the-final">
+            <div class="learnmore">
+              Learn More
+            </div>
+          </a>
+        </div>
+        <div class="guidepart1">
+          <h1>GAMEPLAY CONTROL GUIDE</h1>
+          <p>Master the fundamentals and dig into advanced controls to elevate your game! Learn about the actions you can perform to <br>take your skills to the next level.</p>
+          <a style="text-decoration: none;" href="https://www.ea.com/games/fifa/fifa-mobile/news/gameplay-guide">
+            <div class="learnmore">
+              Learn More
+            </div>
+          </a>
+        </div>
+        <div class="guidepart1">
+          <h1>WORLD CUP™ DEEP DIVE</h1>
+          <p>Explore all features of the FIFA World Cup™ Tournament to guide your nation to glory! We will tell you all about the available <br>National Teams, Difficulty Levels, Rewards, and Live OVR!</p>
+          <a style="text-decoration: none;" href="https://www.ea.com/games/fifa/fifa-mobile/news/world-cup-deep-dive">
+            <div class="learnmore">
+              Learn More
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="eainformation" class="aboutus" style="margin-top: 12%;background-color: #1a1a1a;">
+      <div style="display: flex;flex-direction: column;width: 100%;">
+        <div id="noidunggamekhac" style="display: flex;flex-direction: column;width: 100%;">
+          <div class="aboutus1" style="background-color: white;">
+            <a id="button3cham" href="#" style="text-decoration: none;margin-left: 1%;width: 5%;">
+              <h2  style="color: black;">⋮</h2>
+            </a>
+            
+             <div style="margin: 1.7%;font-size: 120%;justify-content: center;width:30%;">
+               <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200px" height="23.78px" viewBox="0 0 200 23.78"><defs><style>.cls-1{fill:none;}.cls-2{clip-path:url(#clippath);}</style><clipPath id="clippath"><path class="cls-1" d="M0,1.27H16.11v3.9H4.44v5.2H13.89v3.84H4.44v5.42h11.67v3.84H0V1.27ZM17.94,23.47h4.03V0l-4.03,1.27V23.47Zm22.27-7.2c0,.19-.03,.38-.03,.6h-12.21c.54,2,2.31,3.33,4.47,3.33,1.24,0,2.38-.48,3.04-1.46h4.47c-1.2,3.04-4.06,5.04-7.58,5.04-4.76,0-8.63-3.49-8.63-8.24s3.68-8.24,8.21-8.24c3.93,0,8.24,2.89,8.24,8.97Zm-4.38-2.28c-.35-1.87-2-3.17-3.87-3.17s-3.42,1.24-3.96,3.17h7.83Zm14.01-2.92c1.78,0,3.27,1.08,3.9,2.79h4.09c-.76-3.84-4.06-6.53-7.99-6.53-4.57,0-8.28,3.46-8.28,8.25s3.71,8.21,8.28,8.21c3.93,0,7.23-2.57,7.99-6.41h-4.09c-.63,1.71-2.13,2.79-3.9,2.79-2.38,0-4.28-1.87-4.28-4.53s1.9-4.57,4.28-4.57ZM63.09,3.01l-3.96,1.27v15.09c0,2.44,1.71,4.09,4.63,4.09h3.93v-3.58h-2.79c-1.24,0-1.81-.57-1.81-1.62v-7.2h4.6v-3.42h-4.6V3.01Zm117.78,0l-3.96,1.27v15.09c0,2.44,1.71,4.09,4.63,4.09h3.93v-3.58h-2.79c-1.24,0-1.81-.57-1.81-1.62v-7.2h4.6v-3.42h-4.6V3.01Zm-107.62,7.48v-2.85h-4.03v15.82h4.03V15.09c0-2.16,1.9-4.41,5.14-3.9v-3.84c-2.44-.29-4.19,1.08-5.14,3.14Zm22.02,5.07c0,4.76-3.74,8.21-8.37,8.21s-8.37-3.46-8.37-8.21,3.74-8.25,8.37-8.25,8.37,3.46,8.37,8.25Zm-4,.03c0-2.73-1.93-4.57-4.38-4.57s-4.38,1.84-4.38,4.57,1.93,4.53,4.38,4.53,4.38-1.87,4.38-4.53Zm14.55-8.31c-2.03,0-3.77,.89-4.72,2.31v-1.97h-4.03v15.82h4.03V13.89c0-1.84,1.43-3.3,3.3-3.3s3.3,1.39,3.3,3.46v9.42h4.03V13.73c0-3.71-2.12-6.44-5.9-6.44ZM115.96,.48c-1.4,0-2.57,1.17-2.57,2.6s1.17,2.6,2.57,2.6,2.6-1.17,2.6-2.6-1.17-2.6-2.6-2.6Zm-2,22.99h4.03V7.64h-4.03v15.82Zm14.09-12.4c1.78,0,3.27,1.08,3.9,2.79h4.09c-.76-3.84-4.06-6.53-7.99-6.53-4.57,0-8.28,3.46-8.28,8.25s3.71,8.21,8.28,8.21c3.93,0,7.23-2.57,7.99-6.41h-4.09c-.32,.86-.85,1.55-1.52,2.04s-1.49,.75-2.38,.75c-2.38,0-4.28-1.87-4.28-4.53s1.9-4.57,4.28-4.57ZM153.98,.32l11.42,23.15h-4.63l-2.25-4.72h-9.26l-2.19,4.72h-4.5L153.98,.32Zm2.92,15.03l-3.08-6.47-2.98,6.47h6.06Zm13.49-4.85v-2.85h-4.03v15.82h4.03V15.09c0-2.16,1.9-4.41,5.14-3.9v-3.84c-2.44-.29-4.19,1.08-5.14,3.14Zm23.68,3.42c-1.97-.51-3.65-.95-3.65-2.12,0-.95,1.01-1.46,2.12-1.46,1.87,0,3.27,1.08,3.52,2.73h3.68c-.35-3.39-3.23-5.77-7.13-5.77-3.46,0-6.12,1.81-6.12,4.85,0,3.39,3.23,4.28,5.93,4.98,1.93,.51,3.58,.92,3.58,2.06,0,.92-1.05,1.55-2.5,1.55-1.97,0-3.46-1.11-3.68-2.76h-3.68c.35,3.39,3.33,5.8,7.36,5.8,3.65,0,6.5-1.93,6.5-4.98,0-3.3-3.23-4.19-5.93-4.88Z"/></clipPath></defs><g id="Wordmark"><g class="cls-2"><image width="204" height="28" transform="translate(-2.14 -2.11)" xlink:href="data:image/png;base64,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"/></g></g></svg>
+                 
+             </div> 
+            <div style="width: 65%;margin-top: 2%;">
+              <a class="aboutus2" href="https://www.ea.com/en-gb/about">COMPANY</a>  
+              <a class="aboutus2" href="https://www.ea.com/en-gb/ea-studios">EA CAREERS</a>     
+              <a class="aboutus2" href="https://www.ea.com/technology">OUR TECHNOLOGY</a>       
+              <a class="aboutus2" href="https://www.ea.com/en-gb/ea-partners">EA PARTNERS</a>       
+              <a class="aboutus2" href="https://www.ea.com/en-gb/news">NEWS</a>       
+              <a class="aboutus2" href="https://www.ea.com/en-gb/inside-ea">INSIDE EA</a>     
+            </div>  
+    
+          </div> 
+          <iframe style="margin-top: 5%;" width="100%" height="500px" src="https://www.youtube.com/embed/XhP3Xh4LMA8?si=sCTY_CsvC1EPrycw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>         
+          <div style="width: 100%;height: 50px;background-color: black;"></div>
+          <div class="aboutus3">
+              <h1 style="margin-top: 3%;">FIFA MOBILE WAS CREATED BY EA</h1>
+              <h1 style="margin: 3%;">ABOUT EA</h1>
+              <p style="font-size: 120%;">Driven by passion, we are a global leader in digital interactive entertainment.</p>
+              <p style="font-size: 120%;">Headquartered in Redwood City in Northern California, we develop and deliver games, content, and online <br>services for Internet-connected consoles, mobile devices, and personal computers. Through our cutting- <br>edge games, innovative services, and powerful technologies, we bring worlds with infinite possibilities to <br>nearly 600 million active players and fans around the globe, and are recognized for a portfolio of critically <br>acclaimed, high-quality brands such as EA SPORTS™ FIFA, Battlefield™, Apex Legends™, The Sims™, <br>Madden NFL, Need for Speed™, Titanfall® and F1®.</p>
+          </div>
+          <div style="width: 100%;height: 50px;background-color: black;"></div>
+    
+          <div class="aboutus4">
+              <h1 class="products">OUR PRODUCTS</h1>
+              <div class="aboutus5">
+                 <a id="discover" href="https://www.ea.com/en-gb/games" class="aboutus6">
+                   <img style="width: 100%;" src="./img/ea-about-our-products-tile-1.jpg.adapt.crop16x9.652w.jpg" alt="">
+                   <h1 style="margin: 3%;text-align: center;">DISCOVER OUR GAMES</h1>
+                 </a>
+                 <a id="explore" href="https://www.ea.com/en-gb/ea-play" class="aboutus6">
+                  <img style="width: 100%;" src="./img/ea-about-grid-tile-ts4-cottage-living.jpg.adapt.crop16x9.652w.jpg" alt="">
+                  <h1 style="margin: 3%;text-align: center;">EXPLORE OUR SUBSCRIPTIONS</h1>
+                 </a>
+                 <a id="learn" href="https://www.ea.com/technology" class="aboutus6">
+                  <img style="width: 100%;" src="./img/ea-about-our-products-tile-2.jpg.adapt.crop16x9.652w.jpg" alt="">
+                  <h1 style="margin: 3%;text-align: center;">LEARN ABOUT OUR TECHNOLOGIES</h1>
+                 </a>
+              
+        </div>
+            
+           </div>
+  
+        <div style="width: 100%;height: 10px;color: black;"></div>
+        <div class="aboutus7">
+          <div style="display: flex;flex-direction: column;text-align: start;">
+              <h1 style="color: white;">Our People</h1>
+              <p style="color: white;margin-bottom: 3%;">Everything we do is designed to inspire the world to play, and we <br>believe we’re at our best when we listen, learn, and empower <br>each other. We celebrate openness and curiosity and are <br>committed to making a positive impact in the world. </p>
+              <p style="color: white;">We hire creative, collaborative, inclusive people with diverse <br>backgrounds who enrich our culture and challenge us to be <br>better people and better at what we do. And we nurture <br>inclusive leaders who foster a belonging culture – a place where <br>everyone can thrive, fulfill their potential and make the best <br>games. Find out what makes us different.</p>
+          </div>
+  
+          <div style="display: flex;flex-direction: column;text-align: start;">
+            <h1 style="color: white;">Our Practices</h1>
+            <p style="color: white;margin-bottom: 3%;">We believe in the power of positive play and that being part of a <br>gaming community should be a fun, fair, and safe experience for <br>all. We are equally committed to building a workplace that spurs <br>creativity and innovation and is as diverse as the communities <br>we serve.</p>
+            <p style="color: white;">As a leading global entertainment business, we want to inspire <br>through our actions and create a positive impact in the world. <br>This isn’t a destination but an ongoing journey of transparency <br>and continual progress. You can find out how we’re getting on, <br>and read our Impact Report.</p>
+          </div>
+        </div>
+  
+        <div class="aboutus8">
+            <h1>KEY INFORMATION</h1>
+            <div style="display: flex;flex-direction: row;">
+              <div style="display: flex;flex-direction: column;">
+                 <h3 class="aboutus9">Founded</h3>
+                 <h3 class="aboutus9">Ownership</h3>
+                 <h3 class="aboutus9">Global Headquarters</h3>
+                 <h3 class="aboutus9">Address</h3>
+                 <h3 class="aboutus9">Consumer Purchases</h3>
+              </div>
+              <div style="display: flex;flex-direction: column;margin-left: 1%;">
+                  <h3 class="aboutus10">1982</h3>
+                  <h3 class="aboutus10">Public</h3>
+                  <h3 class="aboutus10">Redwood City, California</h3>
+                  <h3 class="aboutus10">Electronic Arts Inc. 209 Redwood Shores Parkway Redwood City, CA 94065</h3>
+                  <h3 class="aboutus10">Residents in the United States, Canada or Japan contract with Electronic Arts Inc., 209 Redwood Shores <br>Parkway, Redwood City, CA 94065, USA. Residents in any other country, then this Agreement is between <br>you and EA Swiss Sàrl, Place du Molard 8, 1204, Geneva, Switzerland (CH-660-2328005-8).</h3>
+              </div>
+            </div>
+        </div>
+  
+        
+  
+        <div style="text-align: center;background-color: white;border-top: 0.1px solid black;">
+         <h1 >EA HEADQUARTERS</h1>
+        </div>
+        
+         <div style="background-color: white;text-align: center;padding: 3%;">
+          <div style="width: 100%;height: 10%;" class="slides10" ><img style="width: 100%; height: 600px;" src="./img/29667004_GNe9AI978bAQaFFE6ri4L6tPhMkHaT9-dLDSfU30Eus.jpg" alt=""></div>
+          <div style="width: 100%;height: 10%;" class="slides10" ><img  style="width: 100%; height: 600px;" src="./img/EARSaerial.jpg" alt=""></div>
+          <div style="width: 100%;height: 10%;" class="slides10" ><img  style="width: 100%; height: 600px;" src="./img/eaplaytesting-location-redwoodcity-hero-7x2-xl.jpg.adapt.crop3x5.320w.jpg" alt=""></div>
+          <div style="width: 100%;height: 10%;" class="slides10" ><img  style="width: 100%; height: 600px;" src="./img/download.jpg" alt=""></div>
+          <script>
+            w3.slideshow(".slides10", 3000)
+          </script>
+          
+         </div>
+         <div style="background-color: white;">
+          <h1 style="text-align: center;">CONTACT WITH EA</h1>
+          <div ><h2  class="aboutus9" style="border-bottom: none;">Email : </h2><h2 class="aboutus10">mailto:dpo@ea.com</h2></div>
+          <div ><h2  class="aboutus9" style="border-bottom: none;">Phone Number : </h2><h2 class="aboutus10">0377419131</h2></div>
+  
+        </div>
+      </div>
+
+      <div  class="aboutus102" style="display: none;background-color:  #333333;" id="lastcontent">
+          <div class="aboutus11"  style="background-color: white;">
+             <div style="background-color: white;">
+              <div style="text-align: end;">
+                <a id="eax" href="#" style="text-decoration: none;text-align: end;width: 100%;">✖</a>
+              </div>
+              <div style="display: flex;flex-direction: row;width: 100%;">
+                <h3 style="color: grey;">All Games</h3> 
+              </div>
+              <div style="display: flex;flex-direction: row;background-image: url('https://media.contentapi.ea.com/content/dam/gin/images/2021/04/ea-play-16x9.png.adapt.crop1x1.767w.png');background-size: 100% ;height: 100%;text-align: center;justify-content: center;margin-bottom: 5%;">
+                <div style="display: flex;flex-direction: column;justify-content: center;">
+                  <img style="text-align: center;height: 100%;" src="./img/EA_Medallion_White_RGB.png" alt="">
+                </div>
+              </div>
+             </div>
+
+             <div class="eagames" style="display: flex;flex-direction: column;width: 100%;">
+                <div class="eagames1" style="margin-top: 5%;display: flex;flex-direction: row;justify-content: space-between;width: 100%;">
+                  <a id="fifa234" style="height: 100%;width: 44%;display: flex;flex-direction: column;text-decoration: none;" href="https://www.ea.com/en-gb/games/fifa/fifa-23">
+                    <img style="height: 100%;width: 100%;" src="./img/eas-fifa22-gen5-ue-keyart-horz-f23logo.jpg.adapt.crop1x1.767w.jpg" alt="">
+                    <div style="text-align: center;text-decoration: none;">
+                      <h2 style="color: black;text-decoration: 1px solid white;">FIFA 23</h2>
+                    </div>
+                  </a>
+                  <a id="apex" style="height: 100%;width: 44%;display: flex;flex-direction: column;text-decoration: none;" href="https://www.ea.com/games/apex-legends">
+                    <img style="height: 100%;width: 100%;" src="./img/apex-legends-keyart.jpg.adapt.crop1x1.767w.jpg" alt="">
+                    <div style="text-align: center;text-decoration: none;">
+                      <h2 style="color: black;text-decoration: 1px solid white;">APEX</h2>
+                    </div>
+                  </a>
+                </div>
+                <div class="eagames1" style="margin-top: 5%;display: flex;flex-direction: row;justify-content: space-between;width: 100%;">
+                  <a id="madden" style="height: 100%;width: 44%;display: flex;flex-direction: column;text-decoration: none;" href="https://www.ea.com/games/madden-nfl/madden-nfl-23?setLocale=en-us">
+                    <img style="height: 100%;width: 100%;" src="./img/madden-23-keyart.jpg.adapt.crop1x1.767w.jpg" alt="">
+                    <div style="text-align: center;text-decoration: none;">
+                      <h2 style="color: black;text-decoration: 1px solid white;">MADDEN</h2>
+                    </div>
+                  </a>
+                  <a id="f1race" style="height: 100%;width: 44%;display: flex;flex-direction: column;text-decoration: none;" href="https://www.ea.com/en-gb/games/f1/f1-22">
+                    <img style="height: 100%;width: 100%;" src="./img/1-1-gamebox-f122-keyart-1.png.adapt.crop1x1.767w.png" alt="">  
+                    <div style="text-align: center;text-decoration: none;">
+                      <h2 style="color: black;text-decoration: 1px solid white;">F1 22</h2>
+                    </div>  
+                  </a>
+                </div>
+               <div class="eagames1" style="margin-top: 5%;display: flex;flex-direction: row;justify-content: space-between;width: 100%;">
+                <a id="battle" style="height: 100%;width: 44%;display: flex;flex-direction: column;text-decoration: none;" href="https://www.ea.com/games/battlefield/battlefield-2042">
+                  <img style="height: 100%;width: 100%;" src="./img/battlefield-2042-key-art.jpg.adapt.crop1x1.767w.jpg" alt="">
+                  <div style="text-align: center;text-decoration: none;">
+                    <h2 style="color: black;text-decoration: 1px solid white;">BATTLEFIELD</h2>
+                  </div>
+                </a>
+                <a id="sims" style="height: 100%;width: 44%;display: flex;flex-direction: column;text-decoration: none;" href="https://www.ea.com/games/the-sims/the-sims-4">
+                  <img style="height: 100%;width: 100%;" src="./img/the-sims-4-keyart.jpg.adapt.crop1x1.767w.jpg" alt="">
+                  <div style="text-align: center;text-decoration: none;">
+                    <h2 style="color: black;text-decoration: 1px solid white;">SIMS</h2>
+                  </div>
+                </a>               
+             </div>
+          </div>
+
+          <div class="aboutus12"></div>
+      
+      </div>
+
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+    <div class="extrainformation">
+        <div class="extrainformation1" style="display: flex;flex-direction: row;margin-top: 3%;">
+            <div style="width: 70%;">
+                <div style="color: white; font-size: 150%;margin-left: 5%;">FIFA MOBILE</div>
+                <div class="extrainformation0">
+                    <a href="https://www.ea.com/news" class="extrainformation2" style="margin-right: 5%;">News</a>
+                    <a href="https://help.ea.com/en/help-home/" class="extrainformation2">Help</a>
+                    <a href="https://www.ea.com/forums" class="extrainformation2">Forums</a>
+                </div>
+
+            </div>
+            <div style=" width: 30%;">
+                <div style="color: white; font-size: 150%;">FOLLOW US</div>
+                <div class="appsfollow">
+                    <img src="./img/tải xuống (3).png" alt="" id="instagram">
+                    <img src="./img/tải xuống (3).png" alt="" id="instagram1" >
+                    <img src="./img/tải xuống.png" alt="" id="twitter">
+                    <img src="./img/tải xuống.png" alt="" id="twitter1">
+                    <img src="./img/tải xuống (1).png" alt="" id="facebook">
+                    <img src="./img/tải xuống (1).png" alt="" id="facebook1">
+                    <img src="./img/tải xuống (4).png" alt="" id="youtube">
+                    <img src="./img/tải xuống (4).png" alt="" id="youtube1"></div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="footerinformation"></div>
+
+    
+<div class="footer" style="display: flex;">
+        <div style="width: 10%;">
+            <img src="./img/october-ea-ring.png" alt="" class="ea-ring">
+        </div>
+        <div class="footer1">
+            <div class="footer2">
+                <a href="https://www.ea.com/games" class="footer3">BROWSE GAMES</a>
+                <a href="https://www.ea.com/news" class="footer3">LASTEST NEWS</a>
+                <a href="https://help.ea.com/en/help-home/" class="footer3">HELP CENTER</a>
+                <a href="https://www.ea.com/en-gb/forums" class="footer3">EA FORUMS</a>
+            </div>
+            <div>
+                <a href="https://www.ea.com/en-gb/careers" class="footer3">CAREERS</a>
+            </div>
+            <div class="footer4">
+                <a href="https://www.ea.com/legal" class="footer3">Legal & Privacy</a>
+                <a href="https://www.ea.com/en-gb/legal/service-updates" class="footer3">Online Service Updates</a>
+                <a href="https://www.ea.com/legal/user-agreement?isLocalized=true&setLocale=en-gb" class="footer3">User Agreement</a>
+            </div>
+            <div style="margin-top:15px ;">
+                <a href="https://www.ea.com/legal/privacy-and-cookie-policy?isLocalized=true&setLocale=en-gb" class="footer3">Privacy & Cookie Policy (Your Privacy Rights)</a>
+            </div>
+            <div style="margin-top: 15px;margin-bottom: 4%;">
+                <a href="#" class="footer3">© 2023 Electronic Arts Inc.</a>
+            </div>
+        </div>
+        <div style="width: 30%;">
+            <img src="./img/ea-sports-fifa-logo-C2FF7F9D86-seeklogo.com.png" alt="" class="lastimg">
+        </div>
+</div>
+    
+
+    <script src="app.js"></script>
+    <script src="./apphome.js"></script>
+    <script src="./appnews-event.js"></script>
+    <script src="./apphelp.js"></script>
+    <script src="./appcommunity.js"></script>
+    <script src="./appguide.js"></script>
+    <script src="./appaboutus.js"></script>
+    <script src="https://tudongchat.com/js/chatbox.js"></script>
+   <script>
+     const tudong_chatbox = new TuDongChat('YCLMs79sXIYSEe5CyAqEg')
+     tudong_chatbox.initial()
+   </script>
+    
+
+
+    
+</body>
+
+</html>
